@@ -13,16 +13,6 @@ body {
     background-attachment:fixed
 }
 
-
-
-header {
-    background-color:white ;   
-    box-shadow: 0.5vw 0.5vw rgba(128, 128, 128, 0.7);
-    border-radius: 0vw 0vw 1.5vw 1.5vw;    
-}
-
-
-
 .tittle1 {
    text-align:right;
    padding: 2px;
