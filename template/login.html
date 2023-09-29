@@ -6,120 +6,153 @@
     <title>Registrese</title>
     <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/styleslogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head> 
 <body>
     <main>
-        <header>
-			<div class="icon">
-				<img src="../img/gimnasio1.jpg" alt="" width="50" />
-				<h3>Fit21 Team Zone</h3>
-			</div>
-			<nav class="menu">
-				<a href="../index.html" class="sombra-gris"
-					><span>Inicio</span></a
-				>
-				<a href="./tarifas.html" class="sombra-gris"
-					><span>Tarifas</span></a
-				>
-				<a href="./suscripcion.html" class="sombra-gris"
-					><span>Suscripción</span></a
-				>
-				<a href="./login.html" class="sombra-gris"
-					><span>Entrar</span></a
-				>
-			</nav>
-			<div class="redes">
-				<a href="https://www.twitter.com" target="_blank"
-					><i class="fa fa-twitter" aria-hidden="true"></i
-				></a>
-				<a href="https://www.facebook.com" target="_blank"
-					><i class="fa fa-facebook" aria-hidden="true"></i
-				></a>
-				<a href="https://www.instagram.com" target="_blank"
-					><i class="fa fa-instagram" aria-hidden="true"></i
-				></a>
-				<a href="https://www.linkedin.com" target="_blank"
-					><i class="fa fa-linkedin" aria-hidden="true"></i
-				></a>
-			</div>
-		</header>
-
-    <div class="container-form login hide">
-        
-        <div class="information">
-            <div class="info-childs">
-                <img src="../img/gimnasio1.jpg" alt="" width="50">
-                <h2>Bienvenido</h2>
-                <P>Ingresa con tú cuenta</P>
-                <input type="button" value="Iniciar Sesión">
-            </div>
-        </div>
-            <div class="form-information">
-                <div class="form-information-childs">
-                    <h2>Registrar Cuenta</h2>
-                    
-                    <form class="form">
-                        <label>
-                            <input type="text" placeholder="Nombres Completo">                           
-                        </label>
-                        <label>
-                           <input type="email" placeholder="Correo Electrónico">
-                        </label>
-                        <label>
-                            <input type="password" placeholder="Contraseña">
-                        </label>
-                        <input type="submit" value="Registrarse">
-                    </form>
+            <header>
+                <div class="icon">
+                    <img src="../img/gimnasio1.jpg" alt="" width="50" />
+                    <h3>Fit21 Team Zone</h3>
                 </div>
-            </div>
-    </div>
-
-        <div class="container-form register">
-            
-            <div class="information">
-                <div class="info-childs">
-                    <img src="../img/gimnasio1.jpg" alt="" width="50">
-                    <h2>Bienvenido</h2>
-                    <P> Únete a la comunidad</P>
-                    <input type="button" value="Registrarse" id="sign-up">
+                <nav class="menu">
+                    <a href="../index.html" class="sombra-gris"
+                        ><span>Inicio</span></a
+                    >
+                    <a href="./tarifas.html" class="sombra-gris"
+                        ><span>Tarifas</span></a
+                    >
+                    <a href="./suscripcion.html" class="sombra-gris"
+                        ><span>Suscripción</span></a
+                    >
+                    <a href="./login.html" class="sombra-gris"
+                        ><span>Entrar</span></a
+                    >
+                </nav>
+                <div class="redes">
+                    <a href="https://www.twitter.com" target="_blank"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.facebook.com" target="_blank"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.instagram.com" target="_blank"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        ><i class="fa fa-linkedin" aria-hidden="true"></i
+                    ></a>
                 </div>
-            </div>
-                <div class="form-information">
-                    <div class="form-information-childs">
-                        <h2>Iniciar Sesión</h2>
-                       
-                        <form class="form">
-                            <label>
-                               <input type="email" placeholder="Correo Electrónico">
-                            </label>
-                            <label>
-                                <input type="password" placeholder="Contraseña">
-                            </label>
-                            <div><a href="#">Olvido su contraseña?</a></div>
-                            <input type="submit" value="Iniciar Sesión">
+                </header>
+
+                <!-- Ingresar acá -->
+                <section class="container forms">
+                    <div class="form login">
+                        
+                        <div class="form-content">
+                            <div class="encab">
+                                <img src="../img/gimnasio1.jpg" alt="" width="60">
+                                <h1> Bienvenido</h1> 
+                            </div>
+                            <form action="#">
+                                <div class="field input-field">
+                                    <input type="email" placeholder="Correo Electrónico" class="input" required>
+                                    <i class='bx bx-envelope eye-icon1' ></i>
+                                </div>
+
+                                <div class="field input-field">
+                                    <input type="password" placeholder="Contraseña" class="password" required>
+                                    <i class='bx bx-hide eye-icon'></i>
+                                    <i class='bx bx-lock-alt eye-icon1'></i>
+                                </div>
+
+                                <!-- <div class="form-link">
+                                    <a href="#" class="forgot-pass">¿Olvidó su contraseña?</a>
+                                </div> -->
+
+                                <div class="field button-field">                                    
+                                    <div class="div-row-buttom">
+                                        <input type="submit" value="Inicia Sección">
+                                    </div>                                    
+                                </div>
+                            </form>
+
+                            <div class="form-link">
+                                <a href="#" class="forgot-pass">¿Olvidó su contraseña?</a>
+                        </div>
+
+                            <div class="form-link">
+                                <span>¿Aún no tienes cuenta? <a href="#" class="link signup-link"> Regístrate aquí</a></span>
+                            </div>
+
                             
-                        </form>
-                    </div>
-                </div>
-        </div>
-    
-       
-        
-        
-        <footer>
-            <div>
-                <h6>PROYECTO INTEGRADOR</h6>
-                
-                    <ul>
-                        <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
-                        <li><a href="contacto.html">Contacto.</a></li>
-                        <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-                    </ul>
-            </div>
-        </footer>
+                        </div>
 
-        <!-- <script src="../script.js"> </script> -->
- 
+                    </div>
+
+                        <!-- Registrarse acá -->
+
+                    <div class="form signup">
+                        <div class="form-content">
+                            <div class="encab">
+                                <img src="../img/gimnasio1.jpg" alt="" width="60">
+                                <!-- <p> -->
+                                    <p>¿Aún no tienes cuenta?</p>
+                                    <h1>Regístrate</h1>
+                                    
+                                <!-- </p> -->
+                            </div>
+                            <form action="#">
+                                <div class="field input-field">
+                                    <input type="text" placeholder="Nombre Completo" class="input" required>
+                                    <i class='bx bx-user eye-icon1'></i>
+                                </div>
+
+                                <div class="field input-field">
+                                    <input type="email" placeholder="Correo Electrónico" class="password" required>
+                                    <i class='bx bx-envelope eye-icon1' ></i>
+                                </div>
+
+                                <div class="field input-field">
+                                    <input type="password" placeholder="Contraseña" class="password" required>
+                                    <i class='bx bx-lock-alt eye-icon1'></i>
+                                    <i class='bx bx-hide eye-icon'></i>
+                                </div>
+
+                                <div class="field button-field">
+                                        <div class="div-row-buttom">
+                                        <input type="submit" value="Regístrate">
+                                        </div>
+                                                                    
+                                </div>
+                                </form>
+
+                                <div class="form-link">
+                                <span>¿Ya tienes una cuenta? <a href="#" class="link login-link"> Ingresar aquí</a></span>
+                                </div>
+                            </div>  
+                        </div>             
+
+                    
+                </section>
+                
+            <footer>
+                <div>
+                    <h6>PROYECTO INTEGRADOR</h6>
+                    
+                        <ul>
+                            <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
+                            <li><a href="contacto.html">Contacto.</a></li>
+                            <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
+                        </ul>
+                </div>
+            </footer>
+
+                <!-- JavaScript -->
+                <script src="../js/scriptlogin.js"></script> 
+
+    </main>
 </body>
 </html>
 

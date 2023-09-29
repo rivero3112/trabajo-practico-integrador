@@ -62,3 +62,15 @@ header nav a {
 header nav a span {
     text-align: center;
 }
+
+/* AGREGADO POR JOSE */
+
+
+footer {
+    margin-top: 5vh;
+    background-color: rgb(187, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
