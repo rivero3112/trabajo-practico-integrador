@@ -8,7 +8,7 @@
 }
 
 .container{
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -161,6 +161,15 @@ form{
 
 .form-content a:hover{
     text-decoration: underline;
+}
+
+footer {
+    margin-top: 5vh;
+    background-color: rgb(187, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
 
 /* Responsive */
