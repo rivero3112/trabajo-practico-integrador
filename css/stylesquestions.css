@@ -1,21 +1,29 @@
 .emp h1 {
-	text-align: center;
-	padding-top: 80px;
+text-align: center;
+padding-top: 80px;
 }
 
 main {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-items: center;
-	/* background-color: lightsteelblue; */
-}
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+} 
 
-.tittle1 {
-	text-align: right;
-	padding: 2px;
+/* 
+header {
+    background-color:white ;   
+    box-shadow: 0.5vw 0.5vw rgba(128, 128, 128, 0.7);
+    border-radius: 0vw 0vw 1.5vw 1.5vw;    
+} */
+
+
+/* .tittle1 {
+   text-align:right;
+   padding: 2px;
 }
 
 .tittle1 a {
@@ -31,9 +39,9 @@ main {
 }
 
 .menu a:hover {
-	color: #000;
-	font-weight: bold;
-}
+    color: #000;
+    font-weight: bold;
+} */
 
 .container {
 	box-shadow: 8px 10px 5px #0003;
@@ -45,13 +53,12 @@ main {
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-
-	align-items: center;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion_item {
