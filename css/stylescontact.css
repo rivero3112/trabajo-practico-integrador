@@ -7,79 +7,102 @@
     font-family: 'Montserrat', sans-serif;  
 }
 
-.tittle1 {
-   text-align:right;
-   padding: 2px;
+/* Carrusel */
+
+section{
+    width: 100%;
+    max-width: 1450px;
+    height: 75vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.container{
+    background-color: #ffa134;
+    width: 45%;
+    position: relative;
+    
 }
 
-.tittle1 a {
-    padding-right: 1.5vw;
-   
- }
-
-.menu {
+.container h3{
     text-align:center;
 }
-
-.menu a {
-   padding-right: 1.5vw;
+.container p {
+   padding-left: 20%;
+   text-align:left;
 }
 
-.menu a:hover {
-    color: #000;
+.text a:hover {
+
+    color: black;
     font-weight: bold;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-    flex-wrap: wrap;
-    text-indent: 25px;    
+.text a {
+    color: rgb(5, 59, 160);    
+ }
+
+.text1 a:hover {
+
+    color: black;
+    font-weight: bold;
 }
 
-   
-.flex-container div {
-    /* background-image: url(../img/gimnasio5.jpg); */
-    background-repeat: no-repeat ;
-    background-size: cover;
-    background-color: rgb(152, 236, 208);
-    width: 30vw;
-    height: 45vh;
-    border-radius: 2vw;
-    margin-top: 3rem; ;
-    padding-top: 2rem;;
-    padding-left: 0;
-    box-shadow: 0.5vw 0.5vw rgba(128, 128, 128, 0.8);   
-    color: black
-   }
 
-.flex-container h4 {
-    padding: 1.5rem;
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    width: 100%;
 }
 
-.flex-container a {
-    padding: 2rem;    
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border:  solid #fff 2px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+    
+}
+.active, .quadrate:hover{
+    background-color: #fff;
 }
 
-.flex-container li {
-    list-style-type: none ;
-}
-
-      
-.flex-container div {
-    transition: transform 0.3s ease-in-out;
-   }
-
-.flex-container div:hover{
-    transform: scale(1, 1.1) translate(0.15rem);    
-   }
-
-.headquarters {
-    color: blue;
-} 
+/* Contáctanos */
 
 .div-center {
+    width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -90,12 +113,13 @@
 }
 
 .flex-container1 {
-    background-color: #f7d6e0;
+    background-color: #ed7d31;
     background-size:contain;
     width: 70vw;
     border-radius: 2vw;
     padding:25px; 
-    margin-top: 5rem;
+    /* margin-top: 1rem; */
+    margin-top: 0;
     cursor: pointer;    
     overflow-x: hidden;
     overflow-x: hidden; 
@@ -145,7 +169,7 @@
 .div-row-buttom input[type="reset"]:hover {
         background-color: #a7a7a9;
         transform: scale(1, 1.1) translate(0.1rem); 
-}
+} 
 
 .div-row-center {
         display: flex;
@@ -172,5 +196,31 @@ footer {
     justify-content: center;
     align-items: center;
     height: 15vh;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .container{
+        width:50%;
+    }
+
+    .div-center{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 50%;
+    }
+
+    .div-center{
+        width: 100%;
+    }    
+    .prev,
+    .next{
+        padding: 3vh;
+    }
 }
 
