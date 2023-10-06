@@ -13,36 +13,6 @@ main {
   
 } 
 
-/* 
-header {
-    background-color:white ;   
-    box-shadow: 0.5vw 0.5vw rgba(128, 128, 128, 0.7);
-    border-radius: 0vw 0vw 1.5vw 1.5vw;    
-} */
-
-
-/* .tittle1 {
-   text-align:right;
-   padding: 2px;
-}
-
-.tittle1 a {
-	padding-right: 1.5vw;
-}
-
-.menu {
-	text-align: center;
-}
-
-.menu a {
-	padding-right: 1.5vw;
-}
-
-.menu a:hover {
-    color: #000;
-    font-weight: bold;
-} */
-
 .container {
 	box-shadow: 8px 10px 5px #0003;
 	max-width: 500px;
