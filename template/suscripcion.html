@@ -32,7 +32,53 @@
     </header>
 
         <h1>SUSCRIPCIÓN</h1>
-    
+        <h1>Formulario de suscripción</h1>
+        <form action="gimnasio_21fit.html" target="_blank">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="firstname">Nombre:</label>
+                <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui">
+                <label for="lastname">Apellido:</label>
+                <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui">
+                <br><br>
+                <label for="street">Direccion:</label>
+                <input size="30" type="text" name="address" placeholder="Ingrese su direccion aqui">
+                <label for="city">Ciudad:</label>
+                <input size="30" type="text" name="city" value="C.A.B.A">
+                <br><br>
+                <label for="zipcode">Codigo Postal:</label>
+                <input size="30" type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui">
+                <label for="telefono">Telefono:</label>
+                <input size="30" type="tel" name="telefono" placeholder="Ingrese su telefono aqui">
+                <br><br>
+                <label for="BirthDate">Fecha Nac. (mm/dd/yyyy):</label>
+                <input size="30" type="date" name="BirthDate">
+                <p>Genero (Radio)
+                    <input size="30" type="radio" name="gender" value="hombre" chequed> Hombre
+                    <input size="30" type="radio" name="gender" value="Mujer" > Mujer
+                    <input size="30" type="radio" name="gender" value="Otro" > Otro
+                </p>         
+            </fieldset>
+            <p> Practica algun deporte:
+                <input type="checkbox" name="conocimientos" value="Futbol"> Futbol
+                <input type="checkbox" name="conocimientos" value="Tenis"> Tenis
+                <input type="checkbox" name="conocimientos" value="Voley"> Voley
+                <input type="checkbox" name="conocimientos" value="Handball"> Handball
+                <input type="checkbox" name="conocimientos" value="Basquet"> Basquet
+                <input type="checkbox" name="conocimientos" value="Otro"> Otro
+            </p>
+            <label for="Tipo de entrenamiento">Tipo de entrenamiento: (Select)</label>
+            <select id="Tipo de entrenamiento" name="Tipo de entrenamiento">
+                <option value="recreativo">recreativo</option>
+                <option value="profesional">profesional</option>           
+            </select>
+            <br>
+            <label for="comentarios">Comentarios:</label> <textarea name="comentarios" cols="30" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <button type="reset">Reset</button>
+        </form>
+        <p>Si usted hace click en el boton "Enviar", la información sera enviada a la pagina "gimnasio_21fit.html"</p>
        
         
 
