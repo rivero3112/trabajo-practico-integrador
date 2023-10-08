@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;    
+}
+
 .container{
     height: 90vh;
     width: 100%;
@@ -154,14 +163,14 @@ form{
     text-decoration: underline;
 }
 
-footer {
+/* footer {
     margin-top: 5vh;
     background-color: rgb(187, 185, 185);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
-}
+} */
 
 /* Responsive */
 

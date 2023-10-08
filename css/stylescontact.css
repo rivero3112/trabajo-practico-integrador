@@ -18,17 +18,17 @@ section{
     justify-content: center;
     align-items: center;
 } 
-.container{
+.containerContact{
     background-color: #ffa134;
     width: 45%;
     position: relative;
     
 }
 
-.container h3{
+.containerContact h3{
     text-align:center;
 }
-.container p {
+.containerContact p {
    padding-left: 20%;
    text-align:left;
 }
@@ -189,14 +189,14 @@ section{
 }
 
 
-footer {
+/* footer {
     margin-top: 5vh;
     background-color: rgb(187, 185, 185);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
-}
+} */
 
 
 
