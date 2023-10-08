@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;    
 }
 
-.container{
+.containerLogin {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -163,14 +163,14 @@ form{
     text-decoration: underline;
 }
 
-footer {
+/* footer {
     margin-top: 5vh;
     background-color: rgb(187, 185, 185);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
-}
+} */
 
 /* Responsive */
 
