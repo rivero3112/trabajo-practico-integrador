@@ -11,7 +11,7 @@ main {
   justify-content: center;
   align-items: center;
   
-}  */
+} 
 
 /* 
 header {
@@ -159,12 +159,3 @@ span, .icon {
 p {
   text-align: justify;
 }
-
-/* footer {
-  margin-top: 20vh;
-  background-color: rgb(187, 185, 185);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-} */

@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;    
 }
 
-.containerLogin {
+.container{
     height: 90vh;
     width: 100%;
     display: flex;
