@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;    
 }
 
-.container{
+.containerLogin {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -16,7 +16,7 @@
     background-color: white;
     column-gap: 30px;
 }
-.form{
+.form{    
     position: absolute;
     max-width: 250px;
     width: 100%;
@@ -104,7 +104,6 @@ form{
     color: #8b8b8b;
     cursor: pointer;
     padding: 6px;
-
     }
 
 
@@ -163,14 +162,12 @@ form{
     text-decoration: underline;
 }
 
-/* footer {
-    margin-top: 5vh;
-    background-color: rgb(187, 185, 185);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-} */
+footer {
+    position: relative;
+}
+
+
+
 
 /* Responsive */
 
