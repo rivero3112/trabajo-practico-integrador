@@ -33,6 +33,7 @@ html {
 @import url("./styleslogin.css");
 @import url("./stylescontact.css");
 @import url("./stylesquestions.css");
+@import url("./styleHome.css");
 
 /*===== HEADER =====*/
 header {

@@ -1,84 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Proyecto Integrador</title>
-		<script
-			src="https://kit.fontawesome.com/dc47544c89.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Sofia&display=swap"
-			rel="stylesheet"
-		/>
 
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<header>
-			<div class="iconNav">
-				<img src="./img/logo.png" alt="logo" />
-				<h3>Fit21 Team Zone</h3>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Proyecto Integrador</title>
+	<script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Sofia&display=swap"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<header>
+		<div class="iconNav">
+			<img src="./img/logo.png" alt="logo" />
+			<h3>Fit21 Team Zone</h3>
+		</div>
+		<div class="container">
+			<nav class="menu">
+				<a href="./index.html" class="sombra-gris"><button type="button">Inicio</button></a>
+				<a href="template/tarifas.html" class="sombra-gris"><button type="button">Tarifas</button></a>
+				<a href="template/suscripcion.html" class="sombra-gris"><button type="button">Suscripción</button></a>
+				<a href="template/login.html" class="sombra-gris"><button type="button">Entrar</button></a>
+			</nav>
+			<div class="networks">
+				<a href="https://www.twitter.com" target="_blank" rel="external noopener"><i class="fa fa-twitter"
+						aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com" target="_blank" rel="external noopener"><i class="fa fa-facebook"
+						aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com" target="_blank" rel="external noopener"><i class="fa fa-instagram"
+						aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com" target="_blank" rel="external noopener"><i class="fa fa-linkedin"
+						aria-hidden="true"></i></a>
 			</div>
-			<div class="container">
-				<nav class="menu">
-					<a href="./index.html" class="sombra-gris"
-						><button type="button">Inicio</button></a
-					>
-					<a href="template/tarifas.html" class="sombra-gris"
-						><button type="button">Tarifas</button></a
-					>
-					<a href="template/suscripcion.html" class="sombra-gris"
-						><button type="button">Suscripción</button></a
-					>
-					<a href="template/login.html" class="sombra-gris"
-						><button type="button">Entrar</button></a
-					>
-				</nav>
-				<div class="networks">
-					<a
-						href="https://www.twitter.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-twitter" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.facebook.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-facebook" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.instagram.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-instagram" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.linkedin.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-linkedin" aria-hidden="true"></i
-					></a>
+		</div>
+	</header>
+	<div class="main">
+		<div class="container-video">
+			<video src="img/video.webm" video loop="true" muted autoplay></video>
+			<!---
+				<video loop="true" muted autoplay style="width:1000px;">
+			   <source src="http:tuvideo.com/mivideo.mp4" type="video/mp4">
+				</div>-->
+		</div>
+		<main class="mainHome">
+			<div class="container-demand">
+				<h1 class="demand-title">ON DEMAND</h1>
+				<h3 class="demand-title">Nuestra plataforma digital revolucionará tu entrenamiento. </h3>
+				<h3 class="demand-title">Clases EN VIVO y GRABADAS, personalizadas y mucho más.</h3>
+				<h2 class="demand-title"> Asiste desde donde quieras y en tiempo real a las sesiones que realizamos
+					desde
+					nuestras sedes.
+					¿Qué esperas para probarlo? </h2>
+				<div class="btn-text">
+					<button type="button" class="comienza-ya">COMIENZA YA</button>
 				</div>
 			</div>
-		</header>
+			<div class="container-imgDemand">
+				<img src="img/on_demand.jpg" alt="practice at home">
+			</div>
+			<div class="container-carouselOutdoor">
+				<div class="gallery">
+					<div class="gallery-container">
+						<img class="gallery-item gallery-item-1" src="img/running.jpg" data-index="1" alt="running">
+						<!--<div class="sport">
+							<h2 class="sport-name">Runnig</h2>
+						  </div>-->
+						<img class="gallery-item gallery-item-2" src="img/escalada.jpg" data-index="2">
+						<!--<div class="sport">
+							<h2 class="sport-name">Escalada</h2>
+						  </div>-->
+						<img class="gallery-item gallery-item-3" src="img/yoga.jpg" data-index="3">
+						<!--<div class="sport">
+							<h2 class="sport-name">Yoga</h2>
+						  </div>-->
+						<img class="gallery-item gallery-item-4" src="img/swimming.jpg" data-index="4">
+						<!--<div class="sport">
+							<h2 class="sport-name">Natación</h2>
+						  </div>-->
+						<img class="gallery-item gallery-item-5" src="img/ciclying.jpg" data-index="5">
+						<!--                  <div class="sport">
+							<h2 class="sport-name">Ciclismo</h2>
+						  </div>-->
 
-		<h1>PÁGINA DE INICIO</h1>
-	</body>
+					</div>
+					<div class=".gallery-controls"></div>
+				</div>
+			</div>
+			<div class="container-outdoor">
+				<h1 class="outdoor_title">OUTDOOR</h1>
+				<h2 class="outdoor_title">DISFRUTA TU PASION AL AIRE LIBRE </h3>
+					<h3 class="outdoor_title">Disfruta en clubes y espacios outdoor con los mejores entrenadores.
+				</h2>
+				<div class="btn-text"></div>
+				<button class="comienza-ya">COMIENZA YA</button>
+			</div>
+			<div class="container-indoor">
+				<h1 class="indoor_title">INDOOR</h1>
+				<br>
+				<h2 class="indoor_title">CONOCE NUESTRAS SEDES Y MEJORA TU SALUD DISRUTANDO DE ENTRENAR CON
+					PROFESIONALES
+					RESPONSABLES Y DE CONOCIDA TRAYECTORIA QUE TE AYUDARAN A ALCANZAR TU OBJETIVO </h3>
+					<br>
+					<div class="btn-text"></div>
+					<button class="comienza-ya">COMIENZA YA</button>
+			</div>
+			<div class="container-carouselIndoor">
+				<div class="gallery">
+					<div class="gallery-container">
+						<img class="gallery-item gallery-item-1" src="img/voley.webp" data-index="1">
+						<img class="gallery-item gallery-item-2" src="img/bodybuilding.jpg" data-index="2">
+						<img class="gallery-item gallery-item-3" src="img/gymastics.jpg" data-index="3">
+						<img class="gallery-item gallery-item-4" src="img/indoorCycling.webp" data-index="4">
+						<img class="gallery-item gallery-item-5" src="img/fencing.jpg" data-index="5">
+					</div>
+					<div class=".gallery-controls"></div>
+				</div>
+			</div>
+			<div class="container-nutricion">
+				<h1 class="nutricion_title"><span style="color: black"> CUIDA TU </span>NUTRICION </h1>
+				<br>
+				<h2 class="nutricion_title"> TODO LO QUE NECESITAS PARA ALIMENTARTE DE FORMA SALUDABLE y ALCANZAR TU
+					OBJETIVO
+				</h2>
+				<div class="nutricion-lista">
+					<h3>
+						<ul>
+							<li> STAFF de nutricionistas a disposición.</li>
+							<li>DIETAS adaptadas por objetivos: perder peso, tonificar tus músculos o reducir tu estrés
+							</li>
+							<li>RECETAS caseras fáciles de hacer y batidos energéticos, de proteínas y diuréticos</li>
+						</ul>
+					</h3>
+				</div>
+				<br>
+				<div class="btn-text"></div>
+				<button class="comienza-ya">COMIENZA YA</button>
+			</div>
+			<div class="container-imgNutricion">
+				<img src="img/nutrition.jpg" alt="salad image">
+			</div>
+			<div class="container-imgRehabilitacion">
+				<img src="img/kinesic.jpg" alt="medic traetment">
+			</div>
+			<div class="container-rehabilitacion">
+				<h1 class="kinesiologia_title">RECUPERA<span style="color: black"> TU POTENCIAL</span></h1>
+				<br>
+				<h2 class="kinesiologia_title"> NUESTRO STAFF DE PROFESIONALES TRABAJA CODO A CODO PARA RESTABLECER TU
+					MAXIMA
+					CAPACIDAD.</h2>
+				<div class="staff-lista">
+					<h3>
+						<ul>
+							<li>Deportólogos</li>
+							<li>Kinesiólogos</li>
+							<li>Nutricionistas</li>
+							<li>Entrenadores</li>
+						</ul>
+					</h3>
+				</div>
+				<br>
+				<button class="comienza-ya">COMIENZA YA</button>
+			</div>
+			<div class="testimony-section">
+				<h1><span style="color: whitesmoke"> testimonios</span></h1>
+				<span class="border"></span>
+				<div class="ps">
+					<a href="#p1"><img src="img/JMdP4.jpg" alt="Juan Martin Del Potro"></a>
+					<a href="#p2"><img src="img/lauraColombo.jpg" alt="modelo Laura Colombo"></a>
+					<a href="#p3"><img src="img/mama2.jpg" alt="programadora y mamá Laura Giordano"></a>
+				</div>
+			</div>
+			<div class="section" id="p1">
+				<span class="name">Juan Martín Del Potro</span>
+				<span class="border"></span>
+				<p>
+					Les estoy eternamente agradecido. El equipo de profesionales fue desicivo en mi rehabilitación para
+					lograr
+					el US
+					Open 2009 luego de la fisura en una vértebra lumbar en el Abierto de Australia.
+				</p>
+			</div>
+			<div class="section" id="p2">
+				<span class="name">Laura Colombo</span>
+				<span class="border"></span>
+				<p>
+					Nutrición y ejercitación con personal trainer fue la combinación exitosa para eliminar el sobrepeso,
+					recuperar la
+					figura luego de los embarazos y volver a las pasarelas a los 40 años.
+				</p>
+			</div>
+			<div class="section" id="p3">
+				<span class="name">Susana Giordano</span>
+				<span class="border"></span>
+				<p>
+					Las clases de matronatación me conectaron de una manera impensada con mi bebé, es una experiencia
+					indescripteble.
+					Te brinda seguridad ver lo mucho que se divierte en el agua.
+				</p>
+			</div>
+			<div class="container-pasion">
+				<h1 class="pasion_title">ENCUENTRA TU PASION </h1>
+				<br>
+				<h3 class="pasion_title"> <span class="drop-cap">+100 DISCIPLINAS</span> que se adaptan a tu condición
+					de salud.
+				</h3>
 
-	<footer>
-		<div>
-			<h6>PROYECTO INTEGRADOR</h6>
-			
-				<ul>
-					<li><a href="../template/preguntas.html">Preguntas Frecuentes.</a></li>
-					<li><a href="../template/contacto.html">Contacto.</a></li>
-					<li><a href="../template/Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-				</ul>
-		</div>
-	</footer>
+				<div class="media-container">
+					<div class="media-scroller">
+
+						<!--   Group 1 -->
+						<div class="media-group" id="group-1">
+							<div class="media-element">
+								<img src="img/indoorCycling.webp" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h3 class="sport-name">
+										indoor ciclying
+									</h3>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/matro.webp" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h3 class="sport-name">
+										matro natación
+									</h3>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/ashtanga.webp" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										ashtanga yoga
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/tenisMesa.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										tenis de mesa
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/musculación 2.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										musculación
+									</h2>
+								</div>
+							</div>
+
+							<a class="next" href="#group-2" aria-label="next">
+								<svg>
+									<use href="#next"></use>
+								</svg>
+							</a>
+						</div>
+
+						<!-- Group 2   -->
+						<div class="media-group" id="group-2">
+							<a class="previous" href="#group-1">
+								<svg>
+									<use href="#previous"></use>
+								</svg>
+							</a>
+							<div class="media-element">
+								<img src="img/cross fit.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										cross fit
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/embarazadas.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										gimnasia embarazadas
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/fitness.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										ritmos latinos
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/karate.webp" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										karate
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/FunctionalGym.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										gimnasia funcional
+									</h2>
+								</div>
+							</div>
+							<a class="next" href="#group-3" aria-label="next">
+								<svg>
+									<use href="#next"></use>
+								</svg>
+							</a>
+						</div>
+
+						<!-- Group 3   -->
+						<div class="media-group" id="group-3">
+							<a class="previous" href="#group-2">
+								<svg>
+									<use href="#previous"></use>
+								</svg>
+							</a>
+							<div class="media-element">
+								<img src="img/jj.jpg" alt="">
+								<div class="tranding-slide-content-bottom">
+									<h2 class="sport-name">
+										jiu jitsu
+									</h2>
+								</div>
+							</div>
+							<div class="media-element">
+								<img src="img/sanda.jpg" alt="">
+								<h2 class="sport-name">
+									sanda
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/pilates.jpg" alt="">
+								<h2 class="sport-name">
+									pilates
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/stretching.webp" alt="">
+								<h2 class="sport-name">
+									stretching
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/tkd.webp" alt="">
+								<h2 class="sport-name">
+									tae kwon do
+								</h2>
+							</div>
+							<a class="next" href="#group-4" aria-label="next">
+								<svg>
+									<use href="#next"></use>
+								</svg>
+							</a>
+						</div>
+
+						<!--  Group 4  -->
+						<div class="media-group" id="group-4">
+							<a class="previous" href="#group-3">
+								<svg>
+									<use href="#previous"></use>
+								</svg>
+							</a>
+							<div class="media-element">
+								<img src="img/kendo.jpg" alt="">
+								<h2 class="sport-name">
+									kendo
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/viga.webp" alt="">
+								<h2 class="sport-name">
+									gimnasia artistica
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/waterpolo.jpg" alt="">
+								<h2 class="sport-name">
+									waterpolo
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/patin.jpg" alt="">
+								<h2 class="sport-name">
+									patin
+								</h2>
+							</div>
+							<div class="media-element">
+								<img src="img/futsal.jpg" alt="">
+								<h2 class="sport-name">
+									futsal
+								</h2>
+							</div>
+						</div>
+
+						<div class="navigation-indicators">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+					</div>
+				</div>
+
+				<svg>
+					<symbol id="next" viewBox="0 0 256 512">
+						<path fill="white"
+							d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+					</symbol>
+
+					<symbol id="previous" viewBox="0 0 256 512">
+						<path fill="white"
+							d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+					</symbol>
+				</svg>
+
+			</div>
+		</main>
+	</div>
+
+
+</body>
+
+<footer>
+	<div>
+		<h6>PROYECTO INTEGRADOR</h6>
+
+		<ul>
+			<li><a href="../template/preguntas.html">Preguntas Frecuentes.</a></li>
+			<li><a href="../template/contacto.html">Contacto.</a></li>
+			<li><a href="../template/Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
+		</ul>
+	</div>
+</footer>
+
 </html>
