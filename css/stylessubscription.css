@@ -1,23 +1,16 @@
-form{
+   .Planes {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 1.2vw;
-    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;  
+    border: 5px outset black;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     }
 
-    .Planes {
-        border: 5px outset black;
-        background-color: white;
-        text-align: center;
-      }
 
-      .xxxx {
-        border: 5px outset red;
-        background-color: lightblue;
-        text-align: center;
-      }
 
 
     .sombra-gris {
