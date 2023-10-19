@@ -27,7 +27,7 @@
   /*justify-content: center;
   align-items: center;*/
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 
@@ -90,8 +90,6 @@ video {
   align-self: center;
   word-wrap: normal;
   text-align: center;
-  /*    margin-left: 5%;
-    margin-right: 5%;*/
   text-shadow: 0.5px 0.5px 1.5px gray;
   max-width: 100%;
 }
@@ -103,7 +101,6 @@ video {
 }
 
 .comienza-ya {
-  /*display: flex;*/
   border-radius: 15px;
   background-color: darkorange;
   font-weight: bold;
@@ -128,6 +125,7 @@ video {
   /*margin: auto;*/
   max-width: 1000px;
   position: relative;
+  align-self: center;
 }
 
 /*.container-outdoor{
@@ -144,9 +142,9 @@ video {
 }
 
 
-.container-imgRehabilitacion>img,
-.container-imgNutricion>img,
-.container-imgDemand>img {
+.container-imgRehabilitacion > img,
+.container-imgNutricion > img,
+.container-imgDemand > img {
   background-repeat: no-repeat;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -172,10 +170,13 @@ video {
 .container-pasion {
   grid-column-start: 1;
   grid-column-end: 4;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  width: 95vw;
 }
 
-
+.media-container{
+  margin-top: 0.5rem;
+}
 
 .pasion_title,
 .media-container {
@@ -268,9 +269,9 @@ video {
 
 .sport-name {
   font-variant: small-caps;
-  font-size: xx-large;
-  text-decoration-line: underline;
-  text-decoration-color: darkcyan;
+  font-size: x-large;
+  /*text-decoration-line: underline;
+  text-decoration-color: darkcyan;*/
   letter-spacing: 1px;
   text-shadow: 0.5px 0.5px 1px gray;
 }
@@ -281,7 +282,7 @@ video {
 
 .gallery {
   width: 100%;
-  border: 0.2rem solid red;
+  /*border: 0.2rem solid red;*/
 }
 
 .gallery-container {
@@ -600,6 +601,12 @@ main {
     width: 100%;
     margin-top: 1rem;
     max-height: 35vh;
+    margin-top: 5rem;
+  }
+
+  .bloque-rehabilitacion {
+    margin-top: 10rem;
+    margin-bottom: 5%;
   }
 
   .container-demand,
@@ -641,7 +648,7 @@ main {
   .container-rehabilitacion h1,
   .container-nutricion h1,
   .container-indoor h1 {
-    font-size: x-large;
+    font-size: xxx-large;
   }
   
   
@@ -650,7 +657,8 @@ main {
   .container-rehabilitacion h2,
   .container-nutricion h2,
   .container-indoor h2 {
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top: 1rem;
   }
   
   .container-demand h3,
@@ -658,9 +666,12 @@ main {
   .container-rehabilitacion h3,
   .container-nutricion h3,
   .container-indoor h3 {
-    font-size: large;
+    font-size: x-large;
   }
 
+    .nutricion-lista{
+      margin-top: 1.5rem;
+    }
  
 }
 
