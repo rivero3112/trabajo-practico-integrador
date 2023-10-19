@@ -1,4 +1,13 @@
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.containerLogin {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -7,7 +16,7 @@
     background-color: white;
     column-gap: 30px;
 }
-.form{
+.form{    
     position: absolute;
     max-width: 250px;
     width: 100%;
@@ -95,7 +104,6 @@ form{
     color: #8b8b8b;
     cursor: pointer;
     padding: 6px;
-
     }
 
 
@@ -155,13 +163,11 @@ form{
 }
 
 footer {
-    margin-top: 5vh;
-    background-color: rgb(187, 185, 185);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
+    position: relative;
 }
+
+
+
 
 /* Responsive */
 

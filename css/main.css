@@ -33,6 +33,7 @@ html {
 @import url("./styleslogin.css");
 @import url("./stylescontact.css");
 @import url("./stylesquestions.css");
+@import url("./styleHome.css");
 
 /*===== HEADER =====*/
 header {
@@ -51,7 +52,7 @@ header .container {
 	justify-content: space-around;
 }
 
-header .icon {
+header .iconNav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -61,13 +62,13 @@ header .icon {
 	width: 10rem;
 }
 
-header .icon img {
+header .iconNav img {
 	position: absolute;
 	top: 0;
 	height: 3.2rem;
 }
 
-header .icon h3 {
+header .iconNav h3 {
 	z-index: 2;
 	position: absolute;
 	bottom: 0rem;
