@@ -12,14 +12,14 @@
   padding-top: 30px;
   }
 
-  main {
+  /*main {
     width: 900px;
     max-height: 300px;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  } 
+  } */
 
   .containerQuestions {
     box-shadow: 8px 10px 5px #0003;

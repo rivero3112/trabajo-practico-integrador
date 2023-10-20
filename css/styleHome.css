@@ -466,8 +466,6 @@ video {
 
 @media (min-width: 720px) {
 
-  main {
-    grid-template-columns: auto auto;
-  }
+
 
 }
