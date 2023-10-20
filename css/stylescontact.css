@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 1.2vw;
-    font-family: 'Montserrat', sans-serif;  
-}
+
 
 /* Carrusel */
 
@@ -17,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+} */
 .containerContact{
     background-color: #ffa134;
     width: 45%;

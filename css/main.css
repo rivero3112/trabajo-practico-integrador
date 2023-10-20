@@ -33,6 +33,7 @@ html {
 @import url("./styleslogin.css");
 @import url("./stylescontact.css");
 @import url("./stylesquestions.css");
+@import url("./styleHome.css");
 
 /*===== HEADER =====*/
 header {
@@ -107,7 +108,7 @@ header nav a span {
 }
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100vw;
 	background-color: var(--grey);
