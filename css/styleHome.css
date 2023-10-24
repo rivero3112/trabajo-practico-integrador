@@ -27,22 +27,42 @@
   margin-top: 3rem;
 }
 
+#p1,
+#p2,
+#p3{
+  font-size: xxx-large;
+  font-weight: bold;
+}
 
-h1 {
-  font-size: 3rem;
+#p1 p,
+#p2 p,
+#p3 p{
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.testimony-section h1,
+.container-pasion h1{
+  font-size: xxx-large;
   font-weight: bold;
   color: darkorange;
 }
 
-
-h2 {
+.bloque-rehabilitacion h2,
+.bloque-nutricion h2{
   font-size: 2rem;
   font-weight: bold;
 }
 
-h3 {
+.bloque-rehabilitacion h3,
+.bloque-nutricion h3{
   font-size: 1.5rem;
 }
+
+.container-pasion h3{
+  font-size: 1.5rem;
+}
+
 
 .staff-lista h3,
 .nutricion-lista h3 {
@@ -254,7 +274,7 @@ video {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: white;
-  font-size: 50px;
+  font-size: xxx-large;
 }
 
 .border {
@@ -390,6 +410,7 @@ video {
   .container-nutricion h1,
   .container-indoor h1 {
     font-size: xxx-large;
+    color: darkorange;
   }
   
   
