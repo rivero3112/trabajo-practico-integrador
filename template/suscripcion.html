@@ -1,80 +1,246 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suscripción</title>
-    <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/stylessubscription.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    
-</head> 
+
+</head>
+
 <body>
-    
-        <header>
-			<div class="iconNav">
-				<img src="../img/logo.png" alt="logo" />
-				<h3>Fit21 Team Zone</h3>
-			</div>
-			<div class="container">
-				<nav class="menu">
-					<a href="../index.html" class="sombra-gris"
-						><button type="button">Inicio</button></a
-					>
-					<a href="./tarifas.html" class="sombra-gris"
-						><button type="button">Tarifas</button></a
-					>
-					<a href="./suscripcion.html" class="sombra-gris"
-						><button type="button">Suscripción</button></a
-					>
-					<a href="./login.html" class="sombra-gris"
-						><button type="button">Entrar</button></a
-					>
-				</nav>
-				<div class="networks">
-					<a
-						href="https://www.twitter.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-twitter" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.facebook.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-facebook" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.instagram.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-instagram" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.linkedin.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-linkedin" aria-hidden="true"></i
-					></a>
-				</div>
-			</div>
-		</header>
 
-        <h1>SUSCRIPCIÓN</h1>
-    
-       
-        
-
-        <footer>
-            <div>
-                <h6>PROYECTO INTEGRADOR</h6>
-                
-                    <ul>
-                        <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
-                        <li><a href="contacto.html">Contacto.</a></li>
-                        <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-                    </ul>
+    <header>
+        <div class="icon">
+            <img src="../img/logo.png" alt="logo" />
+            <h3>Fit21 Team Zone</h3>
+        </div>
+        <div class="container">
+            <nav class="menu">
+                <a href="../index.html" class="sombra-gris"><button type="button">Inicio</button></a>
+                <a href="./tarifas.html" class="sombra-gris"><button type="button">Tarifas</button></a>
+                <a href="./suscripcion.html" class="sombra-gris"><button type="button">Suscripción</button></a>
+                <a href="./login.html" class="sombra-gris"><button type="button">Entrar</button></a>
+            </nav>
+            <div class="networks">
+                <a href="https://www.twitter.com" target="_blank" rel="external noopener"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com" target="_blank" rel="external noopener"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="external noopener"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" rel="external noopener"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
             </div>
-        </footer>
+        </div>
+    </header>
+
+    <main class="suscripcionbody">
+
+
+        <div class="maindiv-suscripcion">
+            <div id="izquierda">
+
+                <!-- Elige tu plan -->
+
+
+
+                <div class="div-imagensuscripcion">
+                    <img src="../img/escala.jpeg" alt="">
+                </div>
+
+
+
+
+            </div>
+
+            <!-- Completa tus datos -->
+            <div id="derecha">
+                <form action="Fit21 Team Zone.html" target="_blank" class="marcoformsuscripcion">
+
+                    <fieldset>
+                        <div class="div-datospersonales">
+
+                            <div class="Genero"> Genero Socio/a:
+                                <input size="30" type="radio" name="gender" value="Masculino" chequed> Masculino
+                                <input size="30" type="radio" name="gender" value="Femenino"> Femenino
+                                <input size="30" type="radio" name="gender" value="Otro"> Otro
+                            </div>
+
+                            <div class="Nombre">
+                                <label for="firstname">Nombre Socio/a:</label>
+                                <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui"
+                                    required class="sombra-rosa">
+                            </div>
+
+                            <div class="Apellido">
+                                <label for="lastname">Apellido Socio/a:</label>
+                                <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui"
+                                    required class="sombra-rosa">
+                            </div>
+
+                            <div class="Email">
+                                <label for="email">Email Socio/a:</label>
+                                <input size="30" type="email" name="email" placeholder="Ingrese su email aqui" required
+                                    class="sombra-rosa">
+                            </div>
+
+                            <div class="DNI">
+                                <label for="DNI">DNI Socio/a:</label>
+                                <input size="30" type="text" name="DNI" placeholder="Ingrese su DNI aqui" required
+                                    class="sombra-rosa">
+                            </div>
+
+                            <div class="Fechanac">
+                                <label for="BirthDate">Fecha Nac. Socio/a (mm/dd/yyyy):</label>
+                                <input size="30" type="date" name="BirthDate">
+                            </div>
+
+                            <div class="Practicadeporte"> Practica algun deporte:
+                                <input type="checkbox" name="conocimientos" value="Futbol"> Futbol
+                                <input type="checkbox" name="conocimientos" value="Tenis"> Tenis
+                                <input type="checkbox" name="conocimientos" value="Voley"> Voley
+                                <input type="checkbox" name="conocimientos" value="Handball"> Handball
+                                <input type="checkbox" name="conocimientos" value="Basquet"> Basquet
+                                <input type="checkbox" name="conocimientos" value="Otro"> Otro
+                            </div>
+
+                            <div class="Tipoentrenamiento">
+                                <label for="Tipo de entrenamiento">Tipo de entrenamiento: </label>
+                                <select id="Tipo de entrenamiento" name="Tipo de entrenamiento">
+                                    <option value="recreativo">recreativo</option>
+                                    <option value="federativo">federativo</option>
+                                </select>
+                            </div>
+
+                            <div class="Email">
+                                <label for="email">Email facturación:</label>
+                                <input size="30" type="email" name="email" placeholder="Ingrese su email aqui" required
+                                    class="sombra-rosa">
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Elige tu plan -->
+
+                    <fieldset>
+                        <h1>Elegí tu plan</h1>
+
+                        <div class="formplansuscripcion">
+                            <section class="div-tarjetaplan">
+                                <div class="flex-container1 sombra-gris">
+                                    <div class="divtitulotarjetaplan">
+                                        <p>3 MESES</p>
+                                    </div>
+                                    <p>$ 400 PESOS</p>
+                                    <p>$ 133 / MES</p>
+                                </div>
+                            </section>
+
+                            <section class="div-tarjetaplan">
+                                <div class="flex-container1 sombra-gris">
+                                    <div class="divtitulotarjetaplan">
+                                        <p>6 MESES</p>
+                                    </div>
+                                    <p>$ 600 PESOS</p>
+                                    <p>$ 100 / MES</p>
+                                </div>
+
+                            </section>
+
+                            <section class="div-tarjetaplan">
+                                <div class="flex-container1 sombra-gris">
+                                    <div class="divtitulotarjetaplan">
+                                        <p>1 ANO</p>
+                                    </div>
+                                    <p>$ 900 PESOS</p>
+                                    <p>$ 75 / MES</p>
+                                </div>
+                            </section>
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <!-- Metodo de pago -->
+
+
+
+
+                    <fieldset>
+                        <h1>Metodo de pago:</h1>
+
+                        <!-- <div class="formplansuscripcion"> -->
+                        <div class="radio-group">
+                            <!-- <input size="30" type="radio" name="metodo" value="mercadopago" chequed></input> -->
+                            <input size="30" type="radio" name="metodo" value="mercadopago" id="metodoMercadoPago"
+                                checked>
+                            <label for="metodoMercadoPago">
+                                <img src="../img/mp1.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <!-- <input size="30" type="radio" name="metodo" value="transferencia"> Transferencia</input> -->
+                            <input size="30" type="radio" name="metodo" value="transferencia" id="metodoTransferencia">
+                            <label for="metodoTransferencia">
+                                <img src="../img/transferencia.png" alt="">
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <!-- <input size="30" type="radio" name="metodo" value="pago facil"> Pago fácil</input> -->
+                            <input size="30" type="radio" name="metodo" value="pago facil" id="metodoPagoFacil">
+                            <label for="metodoPagoFacil">
+                                <img src="../img/pagoFacil.png" alt="">
+
+                        </div>
+
+                    </fieldset>
+
+                    <div class="div-pagar">
+                        <div class="div-pagarboton">
+                            <p>PAGAR</p>
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div>
+            <h6>PROYECTO INTEGRADOR</h6>
+
+            <ul>
+                <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
+                <li><a href="contacto.html">Contacto.</a></li>
+                <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

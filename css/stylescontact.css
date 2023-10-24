@@ -1,15 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 1.2vw;
-    font-family: 'Montserrat', sans-serif;  
-}
+
 
 /* Carrusel */
 
-section{
+.contenedorCarrusel {
     width: 100%;
     max-width: 1450px;
     height: 75vh;
@@ -17,7 +10,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+} */
 .containerContact{
     background-color: #ffa134;
     width: 45%;
@@ -62,7 +55,6 @@ section{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: #fff;
     font-weight: bold;
@@ -119,7 +111,6 @@ section{
     width: 70vw;
     border-radius: 2vw;
     padding:25px; 
-    /* margin-top: 1rem; */
     margin-top: 0;
     cursor: pointer;    
     overflow-x: hidden;
