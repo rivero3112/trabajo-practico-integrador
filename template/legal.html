@@ -1,149 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspectos Legales</title>
-    <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/stylesquestions.css">
-</head> 
-<body>
-  <header>
-    <div class="iconNav">
-      <img src="../img/logo.png" alt="logo" />
-      <h3>Fit21 Team Zone</h3>
-    </div>
-    <div class="container">
-      <nav class="menu">
-        <a href="../index.html" class="sombra-gris"
-          ><button type="button">Inicio</button></a
-        >
-        <a href="./contacto.html" class="sombra-gris"
-          ><button type="button">Contacto</button></a
-        >
-        <a href="./suscripcion.html" class="sombra-gris"
-          ><button type="button">Suscripción</button></a
-        >
-        <a href="./login.html" class="sombra-gris"
-          ><button type="button">Entrar</button></a
-        >
-      </nav>
-      <div class="networks">
-        <a
-          href="https://www.twitter.com"
-          target="_blank"
-          rel="external noopener"
-          ><i class="fa fa-twitter" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="external noopener"
-          ><i class="fa fa-facebook" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="external noopener"
-          ><i class="fa fa-instagram" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          rel="external noopener"
-          ><i class="fa fa-linkedin" aria-hidden="true"></i
-        ></a>
-      </div>
-    </div>
-  </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aspectos Legales</title>
+		<script
+			src="https://kit.fontawesome.com/dc47544c89.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/stylesquestions.css" />
+	</head>
+	<body id="app">
+		<header>
+			<div class="iconNav">
+				<img src="../img/logo.png" alt="logo" />
+				<h3>Fit21 Team Zone</h3>
+			</div>
+			<div class="container">
+				<nav class="menu">
+					<a href="../index.html" class="sombra-gris"
+						><button type="button">Inicio</button></a
+					>
+					<a href="./contacto.html" class="sombra-gris"
+						><button type="button">Contacto</button></a
+					>
+					<a href="./suscripcion.html" class="sombra-gris"
+						><button type="button">Suscripción</button></a
+					>
+					<a href="./login.html" class="sombra-gris"
+						><button type="button">Entrar</button></a
+					>
+				</nav>
+				<div class="networks">
+					<a
+						href="https://www.twitter.com"
+						target="_blank"
+						rel="external noopener"
+					>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a
+						href="https://www.facebook.com"
+						target="_blank"
+						rel="external noopener"
+					>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a
+						href="https://www.instagram.com"
+						target="_blank"
+						rel="external noopener"
+					>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					<a
+						href="https://www.linkedin.com"
+						target="_blank"
+						rel="external noopener"
+					>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="3em"
+					viewBox="0 0 448 512"
+					class="burguerMenuIcon"
+					@click="showMenu"
+				>
+					<path
+						d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+					/>
+				</svg>
+			</div>
+		</header>
+		<div :class="`${menuClass} movilMenu`">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="3em"
+				viewBox="0 0 384 512"
+				@click="closeMenu"
+				class="closeMenuIcon"
+			>
+				<path
+					d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+				/>
+			</svg>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+				<li><a href="./suscripcion.html">Suscripción</a></li>
+				<li><a href="./login.html">Entrar</a></li>
+			</ul>
+		</div>
 
-  <div class="emp">
-    <h1>POLÍTICAS DE PRIVACIDAD Y ASPECTOS LEGALES</h1>
-    </div>  
-  <main class="contenedorQuestions">
-     
-    <div class="containerQuestions">
-      <div class="content">
-        <div class="accordion_item">
-            <div class="accordion_header">
-              <span>
-                  POLÍTICA DE PRIVACIDAD.
-              </span> 
-              <div class="icon">
-                +
-              </div>
-            </div>
-    
-            <div class="accordion_content">
-              <p>
-                  1. INFORMACIÓN AL USUARIO
-              </p>    
-                    <div>
-                       <embed src="../pdf/../pdf/politicas de privacidad Fit21 Team Zone .pdf" type="application/pdf" width="610px" height="210px"/>
-                    </div>
-                    
-              
-            
-            </div>
-          </div>
+		<div class="emp">
+			<h1>POLÍTICAS DE PRIVACIDAD Y ASPECTOS LEGALES</h1>
+		</div>
+		<main class="contenedorQuestions">
+			<div class="containerQuestions">
+				<div class="content">
+					<div class="accordion_item">
+						<div class="accordion_header">
+							<span> POLÍTICA DE PRIVACIDAD. </span>
+							<div class="icon">+</div>
+						</div>
 
-          <div class="accordion_item" style="background-color:#d3dde8;">
-            <div class="accordion_header">
-              <span>
-                  TERMINOS GENERALES Y CONDICIONES DE USO.
-              </span> 
-              <div class="icon">
-                +
-              </div>
-            </div>
-    
-            <div class="accordion_content">
-              <div> 
-               <embed src="../pdf/terminos y condiciones de uso Fit21 Team Zone  Y APP Fit21 Team Zone.pdf" type="application/pdf" width="610px" height="210px"/>               
-              </div>
-            </div>
-          </div>
+						<div class="accordion_content">
+							<p>1. INFORMACIÓN AL USUARIO</p>
+							<div>
+								<embed
+									src="../pdf/../pdf/politicas de privacidad Fit21 Team Zone .pdf"
+									type="application/pdf"
+									width="610px"
+									height="210px"
+								/>
+							</div>
+						</div>
+					</div>
 
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span>
-                TRABAJA CON NOSOTROS
-              </span> 
-              <div class="icon">
-                +
-              </div>
-            </div>
-    
-            <div class="accordion_content">
-                  <p>
-                  En Fit21 Team Zone consideramos a las personas nuestro mayor activo y nuestra razón de ser, por ello el factor humano es un aspecto clave en nuestra organización. 
-                 </P>
-                  <P> 
-                   Propiciamos su desarrollo, en un cordial ambiente de trabajo, con el objetivo de contar con personas formadas e involucradas en la empresa, 
-                   que asuman los puestos de responsabilidad a medio y largo plazo, donde los objetivos de la empresa sean la suma de los objetivos de cada trabajador.
-                  </p>
-                   <p>
-                  Si deseas asumir el reto de formar parte de Fit21 Team Zone, te invitamos a que contactes con nosotros
-                   </p>
-                          
-              </div>
-          </div>        
-      </div>
-    </div>
-  </main>
-    <footer>
-        <div>
-            <h6>PROYECTO INTEGRADOR</h6>
-            
-                <ul>
-                    <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
-                    <li><a href="contacto.html">Contacto.</a></li>
-                    <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-                </ul>
-        </div>
-    </footer>
-    <script src="../js/scriptquestions.js"></script>
-</body>
+					<div
+						class="accordion_item"
+						style="background-color: #d3dde8"
+					>
+						<div class="accordion_header">
+							<span>
+								TERMINOS GENERALES Y CONDICIONES DE USO.
+							</span>
+							<div class="icon">+</div>
+						</div>
 
+						<div class="accordion_content">
+							<div>
+								<embed
+									src="../pdf/terminos y condiciones de uso Fit21 Team Zone  Y APP Fit21 Team Zone.pdf"
+									type="application/pdf"
+									width="610px"
+									height="210px"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion_item">
+						<div class="accordion_header">
+							<span> TRABAJA CON NOSOTROS </span>
+							<div class="icon">+</div>
+						</div>
+
+						<div class="accordion_content">
+							<p>
+								En Fit21 Team Zone consideramos a las personas
+								nuestro mayor activo y nuestra razón de ser, por
+								ello el factor humano es un aspecto clave en
+								nuestra organización.
+							</p>
+							<p>
+								Propiciamos su desarrollo, en un cordial
+								ambiente de trabajo, con el objetivo de contar
+								con personas formadas e involucradas en la
+								empresa, que asuman los puestos de
+								responsabilidad a medio y largo plazo, donde los
+								objetivos de la empresa sean la suma de los
+								objetivos de cada trabajador.
+							</p>
+							<p>
+								Si deseas asumir el reto de formar parte de
+								Fit21 Team Zone, te invitamos a que contactes
+								con nosotros
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<h6>PROYECTO INTEGRADOR</h6>
+
+			<ul>
+				<li>
+					<a href="preguntas.html"
+						>Preguntas Frecuentes</a
+					>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li>
+					<a href="Legal.html"
+						>Política de Privacidad y Aspecto Legal</a
+					>
+				</li>
+			</ul>
+		</footer>
+		<script src="../js/scriptquestions.js"></script>
+	</body>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="../js/vueMenu.js"></script>
 </html>
