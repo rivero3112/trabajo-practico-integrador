@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fit21 Team Zone</title>
   <link rel="icon" type="image/png" href="img/exercise3.png">
+  <link rel="stylesheet" href="css/stylesVars.css">
+  <link rel="stylesheet" href="css/stylesheader.css">
   <link rel="stylesheet" href="css/styleHome.css">
+  
   <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </head>
 
-<body>
+<body id="app">
   <header>
     <div class="iconNav">
       <img src="./img/logo.png" alt="logo" />
@@ -19,23 +22,81 @@
     </div>
     <div class="container">
       <nav class="menu">
-        <a href="./index.html" class="sombra-gris"><button type="button">Inicio</button></a>
-        <a href="template/tarifas.html" class="sombra-gris"><button type="button">Tarifas</button></a>
-        <a href="template/suscripcion.html" class="sombra-gris"><button type="button">Suscripción</button></a>
-        <a href="template/login.html" class="sombra-gris"><button type="button">Entrar</button></a>
+        <a href="./index.html" class="sombra-gris"
+          ><button type="button">Inicio</button></a
+        >
+        <a href="template/contacto.html" class="sombra-gris"
+          ><button type="button">Contacto</button></a
+        >
+        <a href="template/suscripcion.html" class="sombra-gris"
+          ><button type="button">Suscripción</button></a
+        >
+        <a href="template/login.html" class="sombra-gris"
+          ><button type="button">Entrar</button></a
+        >
       </nav>
       <div class="networks">
-        <a href="https://www.twitter.com" target="_blank" rel="external noopener"><i class="fa fa-twitter"
-            aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com" target="_blank" rel="external noopener"><i class="fa fa-facebook"
-            aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com" target="_blank" rel="external noopener"><i class="fa fa-instagram"
-            aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="external noopener"><i class="fa fa-linkedin"
-            aria-hidden="true"></i></a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="external noopener"
+        >
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="external noopener"
+        >
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="external noopener"
+        >
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="external noopener"
+        >
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="3em"
+        viewBox="0 0 448 512"
+        class="burguerMenuIcon"
+        @click="showMenu"
+      >
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
     </div>
   </header>
+  <div :class="`${menuClass} movilMenu`">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="3em"
+      viewBox="0 0 384 512"
+      @click="closeMenu"
+      class="closeMenuIcon"
+    >
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+      />
+    </svg>
+    <ul>
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./template/contacto.html">Contacto</a></li>
+      <li><a href="./template/suscripcion.html">Suscripción</a></li>
+      <li><a href="./template/login.html">Entrar</a></li>
+    </ul>
+  </div>
   <div class="main">
     <div class="container-video">
       <video src="img/video.webm" video loop="true" muted autoplay></video>
@@ -65,16 +126,16 @@
       <div class="container-carouselOutdoor">
         <div class="content-all">
           <div class="content-carrousel">
-            <figure><img src="img/kayak.jpg"></figure>
-            <figure><img src="img/yoga.jpg"></figure>
-            <figure><img src="img/futboltenis.jpg"></figure>
-            <figure><img src="img/escalada.jpg"></figure>
-            <figure><img src="img/running.jpg"></figure>
-            <figure><img src="img/sailling.jpg"></figure>
-            <figure><img src="img/remo.jpg"></figure>
-            <figure><img src="img/ciclying.jpg"></figure>
-            <figure><img src="img/swo.jpg"></figure>
-            <figure><img src="img/delPotro.jpg"></figure>
+            <figure><img alt="" src="img/kayak.jpg"></figure>
+            <figure><img alt="" src="img/yoga.jpg"></figure>
+            <figure><img alt="" src="img/futboltenis.jpg"></figure>
+            <figure><img alt="" src="img/escalada.jpg"></figure>
+            <figure><img alt="" src="img/running.jpg"></figure>
+            <figure><img alt="" src="img/sailling.jpg"></figure>
+            <figure><img alt="" src="img/remo.jpg"></figure>
+            <figure><img alt="" src="img/ciclying.jpg"></figure>
+            <figure><img alt="" src="img/swo.jpg"></figure>
+            <figure><img alt="" src="img/delPotro.jpg"></figure>
           </div>
         </div>
       </div>
@@ -99,16 +160,16 @@
       <div class="container-carouselIndoor">
         <div class="content-all">
           <div class="content-carrousel">
-            <figure><img src="img/Aikido.jpg"></figure>
-            <figure><img src="img/zumba.jpg"></figure>
-            <figure><img src="img/basket.jpg"></figure>
-            <figure><img src="img/fencing.jpg"></figure>
-            <figure><img src="img/voley.webp"></figure>
-            <figure><img src="img/indoorCycling.webp"></figure>
-            <figure><img src="img/bodybuilding.jpg"></figure>
-            <figure><img src="img/gymastics.jpg"></figure>
-            <figure><img src="img/functional.jpg"></figure>
-            <figure><img src="img/swimming.jpg"></figure>
+            <figure><img alt="" src="img/Aikido.jpg"></figure>
+            <figure><img alt="" src="img/zumba.jpg"></figure>
+            <figure><img alt="" src="img/basket.jpg"></figure>
+            <figure><img alt="" src="img/fencing.jpg"></figure>
+            <figure><img alt="" src="img/voley.webp"></figure>
+            <figure><img alt="" src="img/indoorCycling.webp"></figure>
+            <figure><img alt="" src="img/bodybuilding.jpg"></figure>
+            <figure><img alt="" src="img/gymastics.jpg"></figure>
+            <figure><img alt="" src="img/functional.jpg"></figure>
+            <figure><img alt="" src="img/swimming.jpg"></figure>
           </div>
 
         </div>
@@ -429,16 +490,24 @@
     </div>
 
     </main>
+    <footer>
+      <h6>PROYECTO INTEGRADOR</h6>
+    
+      <ul>
+        <li>
+          <a href="../template/preguntas.html"
+            >Preguntas Frecuentes</a
+          >
+        </li>
+        <li><a href="../template/contacto.html">Contacto</a></li>
+        <li>
+          <a href="../template/Legal.html"
+            >Política de Privacidad y Aspecto Legal</a
+          >
+        </li>
+      </ul>
+    </footer>
 </body>
-
-<footer>
-  <div>
-    <ul>
-      <li><a href="../template/preguntas.html">Preguntas Frecuentes.</a></li>
-      <li><a href="../template/contacto.html">Contacto.</a></li>
-      <li><a href="../template/Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-    </ul>
-  </div>
-</footer>
-
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="./js/vueMenu.js"></script>
 </html>
