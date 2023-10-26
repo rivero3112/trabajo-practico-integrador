@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="../css/stylescontact.css">
-    <link rel="stylesheet" href="../css/main.css" />
-</head> 
-<body>
-    
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<script
+			src="https://kit.fontawesome.com/dc47544c89.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/stylescontact.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+	</head>
+	<body id="app">
         <header>
 			<div class="iconNav">
 				<img src="../img/logo.png" alt="logo" />
@@ -20,8 +22,8 @@
 					<a href="../index.html" class="sombra-gris"
 						><button type="button">Inicio</button></a
 					>
-					<a href="./tarifas.html" class="sombra-gris"
-						><button type="button">Tarifas</button></a
+					<a href="./contacto.html" class="sombra-gris"
+						><button type="button">Contacto</button></a
 					>
 					<a href="./suscripcion.html" class="sombra-gris"
 						><button type="button">Suscripción</button></a
@@ -35,143 +37,273 @@
 						href="https://www.twitter.com"
 						target="_blank"
 						rel="external noopener"
-						><i class="fa fa-twitter" aria-hidden="true"></i
-					></a>
+					>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
 					<a
 						href="https://www.facebook.com"
 						target="_blank"
 						rel="external noopener"
-						><i class="fa fa-facebook" aria-hidden="true"></i
-					></a>
+					>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</a>
 					<a
 						href="https://www.instagram.com"
 						target="_blank"
 						rel="external noopener"
-						><i class="fa fa-instagram" aria-hidden="true"></i
-					></a>
+					>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
 					<a
 						href="https://www.linkedin.com"
 						target="_blank"
 						rel="external noopener"
-						><i class="fa fa-linkedin" aria-hidden="true"></i
-					></a>
+					>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
 				</div>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					height="3em"
+					viewBox="0 0 448 512"
+					class="burguerMenuIcon"
+					@click="showMenu"
+				>
+					<path
+						d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+					/>
+				</svg>
 			</div>
 		</header>
-   
-            <!-- Carrusel -->
-            <section>
-                
-                <div class="containerContact">
-                    <div class="mySlides">
-                        <img src="../img/gimnasio3.jpg" alt="">    
-                        <div class="text1">                        
-                            <h3>Seguí nuestras redes</h3>                       
-                                <p><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>: Twitter</p>
-                                <p><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>: Facebook</p>        
-                                <p><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>: Instagram</p>
-                                <p><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>: Linkedin</p>
-                        </div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="../img/gimnasio.jpg" alt="">    
-                        <div class="text">                            
-                            <h3>Sedes Dirección</h3>                        
-                                <p>Villa Devoto :<a class="headquarters" href="https://goo.gl/maps/VYyUsGkYZBEvPLDa7" target="_blank">Fco. Beiro 4800 - CABA</a></p>               
-                                        
-                                <p>Urquiza :<a class="headquarters" href="https://goo.gl/maps/HoLtmXfYDm1NS5rZA" target="_blank">Triunvirato 3000 - CABA</a></p>                                    
-                                                                                    
-                                <p>Recoleta :<a class="headquarters" href="https://goo.gl/maps/sWpbNvViVwcPHM5G6" target="_blank">Callao 1500 - CABA</a></p>
+		<div :class="`${menuClass} movilMenu`">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				height="3em"
+				viewBox="0 0 384 512"
+				@click="closeMenu"
+				class="closeMenuIcon"
+			>
+				<path
+					d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+				/>
+			</svg>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+				<li><a href="./suscripcion.html">Suscripción</a></li>
+				<li><a href="./login.html">Entrar</a></li>
+			</ul>
+		</div>
+		<!-- Carrusel -->
+		<section class="contenedorCarrusel">
+			<div class="containerContact">
+				<div class="mySlides">
+					<img src="../img/gimnasio3.jpg" alt="" />
+					<div class="text1">
+						<h3>Seguí nuestras redes</h3>
+						<p>
+							<a href="https://www.twitter.com" target="_blank"
+								><i
+									class="fa fa-twitter"
+									aria-hidden="true"
+								></i></a
+							>: Twitter
+						</p>
+						<p>
+							<a href="https://www.facebook.com" target="_blank"
+								><i
+									class="fa fa-facebook"
+									aria-hidden="true"
+								></i></a
+							>: Facebook
+						</p>
+						<p>
+							<a href="https://www.instagram.com" target="_blank"
+								><i
+									class="fa fa-instagram"
+									aria-hidden="true"
+								></i></a
+							>: Instagram
+						</p>
+						<p>
+							<a href="https://www.linkedin.com" target="_blank"
+								><i
+									class="fa fa-linkedin"
+									aria-hidden="true"
+								></i></a
+							>: Linkedin
+						</p>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="../img/gimnasio.jpg" alt="" />
+					<div class="text">
+						<h3>Sedes Dirección</h3>
+						<p>
+							Villa Devoto :<a
+								class="headquarters"
+								href="https://goo.gl/maps/VYyUsGkYZBEvPLDa7"
+								target="_blank"
+								>Fco. Beiro 4800 - CABA</a
+							>
+						</p>
 
-                                <p>Belgrano :<a class="headquarters" href="https://goo.gl/maps/nyL5yab5RMWQQCUa9" target="_blank">Cabildo 3200 - CABA</a></p>
-                        </div>
-                    </div>
+						<p>
+							Urquiza :<a
+								class="headquarters"
+								href="https://goo.gl/maps/HoLtmXfYDm1NS5rZA"
+								target="_blank"
+								>Triunvirato 3000 - CABA</a
+							>
+						</p>
 
-                    <div class="mySlides">
-                        <img src="../img/gimnasio6.jpg" alt="">    
-                        <div>                            
-                            <h3>Sedes Teléfonos</h3>                        
-                                <p>Villa Devoto :<a href="tel:+"></a> Teléfono 111-11111111</p>
-                                                
-                                <p>Urquiza :<a  href="tel:+"></a> Teléfono 111-11111111</p>
-                                            
-                                <p>Recoleta :<a href="tel:+"></a> Teléfono 111-11111111</p>
-                                                
-                                <p>Belgrano :<a href="tel:+"></a> Teléfono 111-11111111</p>                                
-                        </div>
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<p>
+							Recoleta :
+                            <a
+								class="headquarters"
+								href="https://goo.gl/maps/sWpbNvViVwcPHM5G6"
+								target="_blank"
+								>Callao 1500 - CABA</a
+							>
+						</p>
 
-                    <div class="elements">
-                        <span class="quadrate" onclick="currentSlide(1)"></span>
-                        <span class="quadrate" onclick="currentSlide(2)"></span>
-                        <span class="quadrate" onclick="currentSlide(3)"></span>
-                    </div>
-                </div>
-            </section>
+						<p>
+							Belgrano :<a
+								class="headquarters"
+								href="https://goo.gl/maps/nyL5yab5RMWQQCUa9"
+								target="_blank"
+								>Cabildo 3200 - CABA</a
+							>
+						</p>
+					</div>
+				</div>
 
+				<div class="mySlides">
+					<img src="../img/gimnasio6.jpg" alt="" />
+					<div>
+						<h3>Sedes Teléfonos</h3>
+						<p>
+							Villa Devoto :<a href="tel:+"></a> Teléfono
+							111-11111111
+						</p>
 
-            <!-- Contáctanos -->
-            <section class="div-center">            
-                    <div class="flex-container1 sombra-gris">  
-                        <div> 
-                            <h1>Contáctanos</h1>                      
-    
-                            <p>Déjanos tu mensaje, pronto nos comunicaremos contigo.</p>
-                        </div>
-                        <form action="https://formspree.io/f/mdorzzag" method="post" class="div-row-center">  
-                            
-                            <div class="div-information">
-                                <div> 
-                                    <label for="nombre">Nombre:</label>
-                                    <input type="text" name="nombre" id="nombre" placeholder="Ejemplo:Jhon Smith " required class="sombra-rosa">
-                                
+						<p>
+							Urquiza :<a href="tel:+"></a> Teléfono 111-11111111
+						</p>
 
-                                    <label for="email">Correo: </label>
-                                    <input type="email" name="email" id="email" placeholder="Ejemplo:jhonsmith@gmail.com" required class="sombra-rosa">
-                                
+						<p>
+							Recoleta :<a href="tel:+"></a> Teléfono 111-11111111
+						</p>
 
-                            
-                                    <label for="telefono">Teléfono: </label>
-                                    <input type="telefono" name="telefono" id="telefono" placeholder="Ejemplo:111-11111111" required class="sombra-rosa">
-                                </div>
-                            </div>
-                            <div>
-                                <p>Consulta:</p>
-                                <textarea name="consulta" id="consulta" cols="103" rows="7" placeholder="Escriba aquí consulta..." required class="sombra-rosa"></textarea>
-                            </div>
+						<p>
+							Belgrano :<a href="tel:+"></a> Teléfono 111-11111111
+						</p>
+					</div>
+				</div>
 
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                            <div class="div-bottom">
-                                <div class="div-row-buttom">
-                                <input type="submit" value="Enviar">
-                            </div>
+				<div class="elements">
+					<span class="quadrate" onclick="currentSlide(1)"></span>
+					<span class="quadrate" onclick="currentSlide(2)"></span>
+					<span class="quadrate" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+		</section>
 
-                            <div class="div-row-buttom">
-                                <input type="reset"  value="Borrar">
-                            </div>
-                        </div>
-                        </form>
-                    </div>
-                
-            </section>
-            
+		<!-- Contáctanos -->
+		<section class="div-center">
+			<div class="flex-container1 sombra-gris">
+				<div>
+					<h1>Contáctanos</h1>
 
-            <footer>
-                <div>
-                    <h6>PROYECTO INTEGRADOR</h6>
-                    
-                        <ul>
-                            <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
-                            <li><a href="contacto.html">Contacto.</a></li>
-                            <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-                        </ul>
-                </div>
-            </footer>
-        <!-- JavaScript -->
-    <script src="../js/scriptcontact.js"></script>
-</body>
+					<p>Déjanos tu mensaje, pronto nos comunicaremos contigo.</p>
+				</div>
+				<form
+					action="https://formspree.io/f/mdorzzag"
+					method="post"
+					class="div-row-center"
+				>
+					<div class="div-information">
+						<div>
+							<label for="nombre">Nombre:</label>
+							<input
+								type="text"
+								name="nombre"
+								id="nombre"
+								placeholder="Ejemplo:Jhon Smith "
+								required
+								class="sombra-rosa"
+							/>
+
+							<label for="email">Correo: </label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Ejemplo:jhonsmith@gmail.com"
+								required
+								class="sombra-rosa"
+							/>
+
+							<label for="telefono">Teléfono: </label>
+							<input
+								type="telefono"
+								name="telefono"
+								id="telefono"
+								placeholder="Ejemplo:111-11111111"
+								required
+								class="sombra-rosa"
+							/>
+						</div>
+					</div>
+					<div>
+						<p>Consulta:</p>
+						<textarea
+							name="consulta"
+							id="consulta"
+							cols="103"
+							rows="7"
+							placeholder="Escriba aquí consulta..."
+							required
+							class="sombra-rosa"
+						></textarea>
+					</div>
+
+					<div class="div-bottom">
+						<div class="div-row-buttom">
+							<input type="submit" value="Enviar" />
+						</div>
+
+						<div class="div-row-buttom">
+							<input type="reset" value="Borrar" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<h6>PROYECTO INTEGRADOR</h6>
+
+			<ul>
+				<li>
+					<a href="preguntas.html"
+						>Preguntas Frecuentes</a
+					>
+				</li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li>
+					<a href="Legal.html"
+						>Política de Privacidad y Aspecto Legal</a
+					>
+				</li>
+			</ul>
+		</footer>
+		<!-- JavaScript -->
+		<script src="../js/scriptcontact.js"></script>
+	</body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="../js/vueMenu.js"></script>
 </html>
-

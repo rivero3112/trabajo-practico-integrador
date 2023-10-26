@@ -1,162 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrese</title>
-    <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/styleslogin.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-</head> 
-<body>
-    <main>
-        <header>
-			<div class="iconNav">
-				<img src="../img/logo.png" alt="logo" />
-				<h3>Fit21 Team Zone</h3>
-			</div>
-			<div class="container">
-				<nav class="menu">
-					<a href="../index.html" class="sombra-gris"
-						><button type="button">Inicio</button></a
-					>
-					<a href="./tarifas.html" class="sombra-gris"
-						><button type="button">Tarifas</button></a
-					>
-					<a href="./suscripcion.html" class="sombra-gris"
-						><button type="button">Suscripción</button></a
-					>
-					<a href="./login.html" class="sombra-gris"
-						><button type="button">Entrar</button></a
-					>
-				</nav>
-				<div class="networks">
-					<a
-						href="https://www.twitter.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-twitter" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.facebook.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-facebook" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.instagram.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-instagram" aria-hidden="true"></i
-					></a>
-					<a
-						href="https://www.linkedin.com"
-						target="_blank"
-						rel="external noopener"
-						><i class="fa fa-linkedin" aria-hidden="true"></i
-					></a>
-				</div>
-			</div>
-		</header>
-
-                <!-- Ingresar acá -->
-                <section class="containerLogin forms">
-                    <div class="form login">
-                        
-                        <div class="form-content">
-                            <div class="encab">
-                                <img src="../img/logo.jpg" alt="logo" />
-                                <h1> Bienvenido</h1> 
-                            </div>
-                            <form action="#">
-                                <div class="field input-field">
-                                    <input type="email" placeholder="Correo Electrónico" class="input" required>
-                                    <i class='bx bx-envelope eye-icon1' ></i>
-                                </div>
-
-                                <div class="field input-field">
-                                    <input type="password" placeholder="Contraseña" class="password" required>
-                                    <i class='bx bx-hide eye-icon'></i>
-                                    <i class='bx bx-lock-alt eye-icon1'></i>
-                                </div>
-
-                                <div class="field button-field">                                    
-                                    <div class="div-row-buttom">
-                                        <input type="submit" value="Inicia Sección">
-                                    </div>                                    
-                                </div>
-                            </form>
-
-                            <div class="form-link">
-                                <a href="#" class="forgot-pass">¿Olvidó su contraseña?</a>
-                        </div>
-
-                            <div class="form-link">
-                                <span>¿Aún no tienes cuenta? <a href="#" class="link signup-link"> Regístrate aquí</a></span>
-                            </div>                            
-                        </div>
-                    </div>
-
-                        <!-- Registrarse acá -->
-
-                    <div class="form signup">
-                        <div class="form-content">
-                            <div class="encab">
-                                <img src="../img/logo.jpg" alt="logo" />
-                               
-                                    <p>¿Aún no tienes cuenta?</p>
-                                    <h1>Regístrate</h1>                                  
-                            </div>
-                            <form action="#">
-                                <div class="field input-field">
-                                    <input type="text" placeholder="Nombre Completo" class="input" required>
-                                    <i class='bx bx-user eye-icon1'></i>
-                                </div>
-
-                                <div class="field input-field">
-                                    <input type="email" placeholder="Correo Electrónico" class="password" required>
-                                    <i class='bx bx-envelope eye-icon1' ></i>
-                                </div>
-
-                                <div class="field input-field">
-                                    <input type="password" placeholder="Contraseña" class="password" required>
-                                    <i class='bx bx-lock-alt eye-icon1'></i>
-                                    <i class='bx bx-hide eye-icon'></i>
-                                </div>
-
-                                <div class="field button-field">
-                                        <div class="div-row-buttom">
-                                        <input type="submit" value="Regístrate">
-                                        </div>
-                                                                    
-                                </div>
-                                </form>
-
-                                <div class="form-link">
-                                <span>¿Ya tienes una cuenta? <a href="#" class="link login-link"> Ingresar aquí</a></span>
-                                </div>
-                            </div>  
-                        </div>           
-                                        
-                </section>
-                
-            <footer>
-                <div>
-                    <h6>PROYECTO INTEGRADOR</h6>
-                    
-                        <ul>
-                            <li><a href="preguntas.html">Preguntas Frecuentes.</a></li>
-                            <li><a href="contacto.html">Contacto.</a></li>
-                            <li><a href="Legal.html">Política de Privacidad y Aspecto Legal.</a></li>
-                        </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registrese</title>
+		<script
+			src="https://kit.fontawesome.com/dc47544c89.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/styleslogin.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body id="app">
+		<main>
+			<header>
+                <div class="iconNav">
+                    <img src="../img/logo.png" alt="logo" />
+                    <h3>Fit21 Team Zone</h3>
                 </div>
-            </footer>
+                <div class="container">
+                    <nav class="menu">
+                        <a href="../index.html" class="sombra-gris"
+                            ><button type="button">Inicio</button></a
+                        >
+                        <a href="./contacto.html" class="sombra-gris"
+                            ><button type="button">Contacto</button></a
+                        >
+                        <a href="./suscripcion.html" class="sombra-gris"
+                            ><button type="button">Suscripción</button></a
+                        >
+                        <a href="./login.html" class="sombra-gris"
+                            ><button type="button">Entrar</button></a
+                        >
+                    </nav>
+                    <div class="networks">
+                        <a
+                            href="https://www.twitter.com"
+                            target="_blank"
+                            rel="external noopener"
+                        >
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="https://www.facebook.com"
+                            target="_blank"
+                            rel="external noopener"
+                        >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            rel="external noopener"
+                        >
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com"
+                            target="_blank"
+                            rel="external noopener"
+                        >
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="3em"
+                        viewBox="0 0 448 512"
+                        class="burguerMenuIcon"
+                        @click="showMenu"
+                    >
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                    </svg>
+                </div>
+            </header>
+            <div :class="`${menuClass} movilMenu`">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3em"
+                    viewBox="0 0 384 512"
+                    @click="closeMenu"
+                    class="closeMenuIcon"
+                >
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                </svg>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./suscripcion.html">Suscripción</a></li>
+                    <li><a href="./login.html">Entrar</a></li>
+                </ul>
+            </div>
 
-                <!-- JavaScript -->
-                <script src="../js/scriptlogin.js"></script> 
+			<!-- Ingresar acá -->
+			<section class="containerLogin forms">
+				<div class="form login">
+					<div class="form-content">
+						<div class="encab">
+							<img src="../img/logo.jpg" alt="logo" />
+							<h1>Bienvenido</h1>
+						</div>
+						<form action="#">
+							<div class="field input-field">
+								<input
+									type="email"
+									placeholder="Correo Electrónico"
+									class="input"
+									required
+								/>
+								<i class="bx bx-envelope eye-icon1"></i>
+							</div>
 
-    </main>
-</body>
+							<div class="field input-field">
+								<input
+									type="password"
+									placeholder="Contraseña"
+									class="password"
+									required
+								/>
+								<i class="bx bx-hide eye-icon"></i>
+								<i class="bx bx-lock-alt eye-icon1"></i>
+							</div>
+
+							<div class="field button-field">
+								<div class="div-row-buttom">
+									<input
+										type="submit"
+										value="Inicia Sección"
+									/>
+								</div>
+							</div>
+						</form>
+
+						<div class="form-link">
+							<a href="#" class="forgot-pass"
+								>¿Olvidó su contraseña?</a
+							>
+						</div>
+
+						<div class="form-link">
+							<span
+								>¿Aún no tienes cuenta?
+								<a href="#" class="link signup-link">
+									Regístrate aquí</a
+								></span
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- Registrarse acá -->
+
+				<div class="form signup">
+					<div class="form-content">
+						<div class="encab">
+							<img src="../img/logo.jpg" alt="logo" />
+
+							<p>¿Aún no tienes cuenta?</p>
+							<h1>Regístrate</h1>
+						</div>
+						<form action="#">
+							<div class="field input-field">
+								<input
+									type="text"
+									placeholder="Nombre Completo"
+									class="input"
+									required
+								/>
+								<i class="bx bx-user eye-icon1"></i>
+							</div>
+
+							<div class="field input-field">
+								<input
+									type="email"
+									placeholder="Correo Electrónico"
+									class="password"
+									required
+								/>
+								<i class="bx bx-envelope eye-icon1"></i>
+							</div>
+
+							<div class="field input-field">
+								<input
+									type="password"
+									placeholder="Contraseña"
+									class="password"
+									required
+								/>
+								<i class="bx bx-lock-alt eye-icon1"></i>
+								<i class="bx bx-hide eye-icon"></i>
+							</div>
+
+							<div class="field button-field">
+								<div class="div-row-buttom">
+									<input type="submit" value="Regístrate" />
+								</div>
+							</div>
+						</form>
+
+						<div class="form-link">
+							<span
+								>¿Ya tienes una cuenta?
+								<a href="#" class="link login-link">
+									Ingresar aquí</a
+								></span
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<h6>PROYECTO INTEGRADOR</h6>
+	
+				<ul>
+					<li>
+						<a href="preguntas.html"
+							>Preguntas Frecuentes</a
+						>
+					</li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li>
+						<a href="Legal.html"
+							>Política de Privacidad y Aspecto Legal</a
+						>
+					</li>
+				</ul>
+			</footer>
+
+			<!-- JavaScript -->
+			<script src="../js/scriptlogin.js"></script>
+		</main>
+	</body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<script src="../js/vueMenu.js"></script>
 </html>
-
