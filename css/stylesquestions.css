@@ -3,14 +3,14 @@
 	padding-top: 30px;
 }
 
-main {
-	width: 900px;
-	max-height: 300px;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+  .contenedorQuestions {
+    width: 900px;
+    max-height: 300px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
 
 .containerQuestions {
 	box-shadow: 8px 10px 5px #0003;
@@ -65,6 +65,34 @@ span,
 	font-weight: 600;
 }
 
-p {
-	text-align: justify;
+  p {
+    text-align: justify;
+  }
+
+  /* RESPONSIVE */
+ 
+  @media screen and (max-width:960px) {
+    .containerQuestions{
+        width:100%;      
+      
+    }
+
+    .content{
+        width: 100%;
+    }   
+
+    }
+ 
+  @media screen and (max-width:768px) {
+    
+    .content{
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width:480px) {
+   
+    .content{
+        width: 100%;      
+    }    
 }

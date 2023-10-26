@@ -1,40 +1,11 @@
-@import 'stylesheader.css';
-@import 'stylescontact.css';
-@import 'stylesquestions.css';
-@import 'styleslogin.css';
-
-/*====== Variables ======*/
-:root {
-	--white: #ffffff;
-	--whitered: #fff5ee;
-	--grey: #c0c0c0;
-	--ligthOrange: #ffa134;
-	--orange: #ed7d31;
-	--darkOrange: #a05421;
-	--ligthRed: #ff6533;
-	--red: #ed4530;
-	--darkRed: #a02e20;
-	--black: #000000;
-	--base-font-family: "Roboto", sans-serif;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-size: 1.2vw;
-	font-family: "Montserrat", sans-serif;
-}
-
-html {
-	position: relative;
-	width: 100vw;
-	min-height: 100vh;
-}
+@import "stylesVars.css";
+@import "stylesheader.css";
+@import "stylescontact.css";
+@import "stylesquestions.css";
+@import "styleslogin.css";
 
 
-
+/*estilos comunes*/
 .sombra-gris {
 	filter: drop-shadow(0.25rem 0.25rem rgba(0, 0, 0, 0.3));
 }

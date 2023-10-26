@@ -1,17 +1,19 @@
-/*import { createApp } from "vue";
-//import HeaderVue from "./vueComponent/header.js";
+const { createApp } = Vue;
 
-createApp({
-	components: {
-		HeaderVue,
-	},
+const menuApp = createApp({
 	data() {
 		return {
-			groceryList: [
-				{ id: 0, text: "Vegetables" },
-				{ id: 1, text: "Cheese" },
-				{ id: 2, text: "Whatever else humans are supposed to eat" },
-			],
+			menuClass: "menuHidden",
 		};
 	},
-}).mount("#app");*/
+	methods: {
+		showMenu() {
+			this.menuClass = "menuShow";
+		},
+		closeMenu() {
+			this.menuClass = "menuHidden";
+		},
+	},
+});
+
+menuApp.mount("#app");

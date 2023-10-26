@@ -1,0 +1,30 @@
+/*====== Variables ======*/
+:root {
+	--white: #ffffff;
+	--whitered: #fff5ee;
+	--grey: #c0c0c0;
+	--ligthOrange: #ffa134;
+	--orange: #ed7d31;
+	--darkOrange: #a05421;
+	--ligthRed: #ff6533;
+	--red: #ed4530;
+	--darkRed: #a02e20;
+	--black: #000000;
+	--base-font-family: "Roboto", sans-serif;
+}
+
+/*normalizacion de pagina*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: medium;
+	font-family: "Montserrat", sans-serif;
+}
+
+html {
+	position: relative;
+	width: 100vw;
+	min-height: 100vh;
+}

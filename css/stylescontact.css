@@ -1,4 +1,4 @@
-section{
+.contenedorCarrusel {
     width: 100%;
     max-width: 1450px;
     height: 75vh;
@@ -51,7 +51,6 @@ section{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: #fff;
     font-weight: bold;
@@ -108,7 +107,6 @@ section{
     width: 70vw;
     border-radius: 2vw;
     padding:25px; 
-    /* margin-top: 1rem; */
     margin-top: 0;
     cursor: pointer;    
     overflow-x: hidden;
