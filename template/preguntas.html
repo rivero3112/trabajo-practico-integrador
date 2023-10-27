@@ -101,8 +101,18 @@
 
 		<main class="contenedorQuestions">
 			<div class="containerQuestions">
-				<div class="content">
-					<div class="accordion_item">
+				<div class="content" v-for="(item, index) in arrayQuestions">
+					<div :class="`${index%2==0 ? 'accordion_item' : 'accordion_item_dark'} `">
+						<div class="accordion_header">
+							<span>{{index+1}}. {{item.header.title}}</span>
+							<div class="icon" @click="changeStateQuestion(index)">{{item.header.icon}}</div>
+						</div>
+
+						<div :class="`accordion_content ${item.state ? 'active' : ''}`" v-html="item.content">
+							
+						</div>
+					</div>
+					<!--<div class="accordion_item">
 						<div class="accordion_header">
 							<span> 1. ¿Qué es Fit21, tu gimnasio online? </span>
 							<div class="icon">+</div>
@@ -196,7 +206,7 @@
 								excusas para saltarte el entrenamiento.
 							</p>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</main>
@@ -218,8 +228,8 @@
 				</li>
 			</ul>
 		</footer>
-		<script src="../js/scriptquestions.js"></script>
 	</body>
 	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-	<script src="../js/vueMenu.js"></script>
+	<!--<script src="../js/vueMenu.js"></script>-->
+	<script src="../js/scriptquestions.js"></script>
 </html>
