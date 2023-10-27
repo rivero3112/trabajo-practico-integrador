@@ -11,12 +11,12 @@ const accordionLegal = createApp({
 					},
 					content: `<p>1. INFORMACIÓN AL USUARIO</p>
                       <div>
-                        <embed
-                          src="../pdf/politicas de privacidad Fit21 Team Zone.pdf"
-                          type="application/pdf"
-                          width="610px"
-                          height="210px"
-                          />
+					  <embed
+					  src="../pdf/politicas de privacidad Fit21 Team Zone.pdf"
+					  type="application/pdf"
+					  width="610px"
+					  height="210px"
+					  />
                       </div>`,
 					state: false,
 				},
@@ -53,7 +53,7 @@ const accordionLegal = createApp({
 				},
 			],
 			arrayQuestions: [
-        {
+				{
 					header: {
 						title: "¿Qué es Fit21, tu gimnasio online?",
 						icon: "+",
@@ -63,7 +63,7 @@ const accordionLegal = createApp({
                     </p>`,
 					state: false,
 				},
-        {
+				{
 					header: {
 						title: "¿He elegido el gimnasio que me conviene?",
 						icon: "+",
@@ -73,7 +73,7 @@ const accordionLegal = createApp({
                     </p>`,
 					state: false,
 				},
-        {
+				{
 					header: {
 						title: "¿Entreno por mi cuenta o con un entrenador personal?",
 						icon: "+",
@@ -83,7 +83,7 @@ const accordionLegal = createApp({
                     </p>`,
 					state: false,
 				},
-        {
+				{
 					header: {
 						title: "¿Debo ir cada día?",
 						icon: "+",
@@ -93,7 +93,7 @@ const accordionLegal = createApp({
                     </p>`,
 					state: false,
 				},
-      ],
+			],
 			menuClass: "menuHidden",
 		};
 	},
@@ -112,7 +112,7 @@ const accordionLegal = createApp({
 				? "-"
 				: "+";
 		},
-    changeStateQuestion(index) {
+		changeStateQuestion(index) {
 			this.arrayQuestions[index].state =
 				!this.arrayQuestions[index].state;
 			this.arrayQuestions[index].header.icon = this.arrayQuestions[index]
