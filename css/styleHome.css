@@ -333,15 +333,17 @@ video {
   font-weight: bold;
 }
 
+.bodyLimit {
+  width: 70%;
+}
+
 /* Fin carousel Testimonios */
 
 
 @media (min-width: 720px) {
   .main {
     flex-direction: column;
-    width: 80vw;
   }
-
   .blque-testimonios{
     margin-top: 13 rem;
   }
