@@ -7,12 +7,13 @@
     <title>Suscripción</title>
     <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/stylesVars.css" />
+    <link rel="stylesheet" href="../css/stylesheader.css" />
     <link rel="stylesheet" href="../css/stylessubscription.css" />
-    <link rel="stylesheet" href="../css/main.css" />
 
 </head>
 
-<body>
+<body id="app">
 
     <header>
         <div class="iconNav">
@@ -99,21 +100,10 @@
 
     <main class="suscripcionbody">
 
-
         <div class="maindiv-suscripcion">
+            
             <div id="izquierda">
-
-                <!-- Elige tu plan -->
-
-
-
-                <div class="div-imagensuscripcion">
-                    <img src="../img/escala.jpeg" alt="">
-                </div>
-
-
-
-
+                <img src="../img/escala.jpeg" class="div-imagensuscripcion" alt="">
             </div>
 
             <!-- Completa tus datos -->
@@ -155,16 +145,16 @@
 
                             <div class="Fechanac">
                                 <label for="BirthDate">Fecha Nac. Socio/a (mm/dd/yyyy):</label>
-                                <input size="30" type="date" name="BirthDate">
+                                <input size="30" type="date" name="BirthDate" placeholder="fecha de nacimiento" />
                             </div>
 
-                            <div class="Practicadeporte"> Practica algun deporte:
-                                <input type="checkbox" name="conocimientos" value="Futbol"> Futbol
-                                <input type="checkbox" name="conocimientos" value="Tenis"> Tenis
-                                <input type="checkbox" name="conocimientos" value="Voley"> Voley
-                                <input type="checkbox" name="conocimientos" value="Handball"> Handball
-                                <input type="checkbox" name="conocimientos" value="Basquet"> Basquet
-                                <input type="checkbox" name="conocimientos" value="Otro"> Otro
+                            <div class="Practicadeporte"> <label for="conocimientos">Practica algun deporte:</label>
+                                <lable><input id="checkboxFutbol" type="checkbox" name="conocimientos" value="Futbol"/> Futbol       </lable>
+                                <lable><input id="checkboxTenis" type="checkbox" name="conocimientos" value="Tenis"/> Tenis </lable>
+                                <lable><input id="checkboxVoley" type="checkbox" name="conocimientos" value="Voley"/> Voley </lable>
+                                <lable><input id="checkboxHandball" type="checkbox" name="conocimientos" value="Handball"/> Handball </lable>
+                                <lable><input id="checkboxBasquet" type="checkbox" name="conocimientos" value="Basquet"/> Basquet </lable>
+                                <lable><input id="checkboxOtro" type="checkbox" name="conocimientos" value="Otro"/> Otro </lable>
                             </div>
 
                             <div class="Tipoentrenamiento">
@@ -191,13 +181,23 @@
                     <fieldset>
                         <h1>Elegí tu plan</h1>
 
-                        <div class="formplansuscripcion">
+                        <div class="formplansuscripcion" v-for="(item, index) in monthCards">
                             <section class="div-tarjetaplan">
+                                <div class="flex-container1 sombra-gris">
+                                    <div class="divtitulotarjetaplan">
+                                        <p>{{item.count}} {{item.unit}}</p>
+                                    </div>
+                                    <p>${{dolarPrice*(item.unitPrice*item.count)}} PESOS</p>
+                                    <p>$ {{dolarPrice*item.unitPrice}} / MES</p>
+                                </div>
+                            </section>
+                            <!--
+                                <section class="div-tarjetaplan">
                                 <div class="flex-container1 sombra-gris">
                                     <div class="divtitulotarjetaplan">
                                         <p>3 MESES</p>
                                     </div>
-                                    <p>$ 400 PESOS</p>
+                                    <p>${{dolarPrice}} 400 PESOS</p>
                                     <p>$ 133 / MES</p>
                                 </div>
                             </section>
@@ -221,7 +221,7 @@
                                     <p>$ 900 PESOS</p>
                                     <p>$ 75 / MES</p>
                                 </div>
-                            </section>
+                            </section>-->
                         </div>
 
                     </fieldset>
