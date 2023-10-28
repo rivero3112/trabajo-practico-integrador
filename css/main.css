@@ -3,14 +3,3 @@
 @import "stylescontact.css";
 @import "stylesquestions.css";
 @import "styleslogin.css";
-@import "stylessubscription.css";
-
-
-/*estilos comunes*/
-.sombra-gris {
-	filter: drop-shadow(0.25rem 0.25rem rgba(0, 0, 0, 0.3));
-}
-
-.sombra-rosa {
-	filter: drop-shadow(0.15rem 0.15rem #f2b5d4);
-}

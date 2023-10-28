@@ -7,7 +7,9 @@
     <title>Suscripción</title>
     <script src="https://kit.fontawesome.com/dc47544c89.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/stylesVars.css" />
+    <link rel="stylesheet" href="../css/stylesheader.css" />
+    <link rel="stylesheet" href="../css/stylessubscription.css" />
 
 </head>
 
@@ -183,7 +185,7 @@
                             <section class="div-tarjetaplan">
                                 <div class="flex-container1 sombra-gris">
                                     <div class="divtitulotarjetaplan">
-                                        <p>{{item.count}} MESES</p>
+                                        <p>{{item.count}} {{item.unit}}</p>
                                     </div>
                                     <p>${{dolarPrice*(item.unitPrice*item.count)}} PESOS</p>
                                     <p>$ {{dolarPrice*item.unitPrice}} / MES</p>

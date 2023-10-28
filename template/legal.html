@@ -100,7 +100,7 @@
 		</div>
 		<main class="contenedorQuestions" id="appLegal">
 			<div class="containerQuestions">
-				<div class="content" v-for="(item, index) in monthCards">
+				<div class="content" v-for="(item, index) in arrayAccordion">
 					<div :class="`${index%2==0 ? 'accordion_item' : 'accordion_item_dark'} `">
 						<div class="accordion_header">
 							<span>{{item.header.title}}</span>

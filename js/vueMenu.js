@@ -3,25 +3,28 @@ const { createApp } = Vue;
 const menuApp = createApp({
 	data() {
 		return {
-			menuClass: "menuHidden",
+			menuClass: `menuHidden`,
 			dolarPrice: 0,
 			monthCards: [
 				{
 					count: 3,
 					unit: "meses",
-					unitPrice: 1,
+					unitPrice: 2,
 				},
 				{
 					count: 6,
 					unit: "meses",
-					unitPrice: 1,
+					unitPrice: 1.5,
 				},
 				{
-					count: 1,
-					unit: "año",
+					count: 12,
+					unit: "meses",
 					unitPrice: 1,
-				}
-			]
+				},
+			],
+			registerForm: false, //show-signup
+			pwShowHide: "password", //password
+			formEyeIcon: "bx-hide", //"bx-show"
 		};
 	},
 	created() {
@@ -45,6 +48,15 @@ const menuApp = createApp({
 					this.dolarPrice = data.venta;
 				});
 		},
+		changePWHide() {
+			this.pwShowHide == "text"
+				? (this.pwShowHide = "password")
+				: (this.pwShowHide = "text");
+			this.formEyeIcon == "bx-show" ? (this.formEyeIcon = "bx-hide") : (this.formEyeIcon = "bx-show");
+		},
+		changeRegisterForm(value) {
+			this.registerForm = value;
+		}
 	},
 });
 
