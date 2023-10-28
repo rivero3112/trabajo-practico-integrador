@@ -98,10 +98,20 @@
 		<div class="emp">
 			<h1>POLÍTICAS DE PRIVACIDAD Y ASPECTOS LEGALES</h1>
 		</div>
-		<main class="contenedorQuestions">
+		<main class="contenedorQuestions" id="appLegal">
 			<div class="containerQuestions">
-				<div class="content">
-					<div class="accordion_item">
+				<div class="content" v-for="(item, index) in arrayAccordion">
+					<div :class="`${index%2==0 ? 'accordion_item' : 'accordion_item_dark'} `">
+						<div class="accordion_header">
+							<span>{{item.header.title}}</span>
+							<div class="icon" @click="changeStateLegal(index)">{{item.header.icon}}</div>
+						</div>
+
+						<div :class="`accordion_content ${item.state ? 'active' : ''}`" v-html="item.content">
+							
+						</div>
+					</div>
+					<!-- <div class="accordion_item">
 						<div class="accordion_header">
 							<span> POLÍTICA DE PRIVACIDAD. </span>
 							<div class="icon">+</div>
@@ -120,15 +130,12 @@
 						</div>
 					</div>
 
-					<div
-						class="accordion_item"
-						style="background-color: #d3dde8"
-					>
+					<div class="accordion_item">
 						<div class="accordion_header">
 							<span>
 								TERMINOS GENERALES Y CONDICIONES DE USO.
 							</span>
-							<div class="icon">+</div>
+							<div class="icon" @click="prueba">+</div>
 						</div>
 
 						<div class="accordion_content">
@@ -171,7 +178,7 @@
 								con nosotros
 							</p>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</main>
@@ -180,9 +187,7 @@
 
 			<ul>
 				<li>
-					<a href="preguntas.html"
-						>Preguntas Frecuentes</a
-					>
+					<a href="preguntas.html">Preguntas Frecuentes</a>
 				</li>
 				<li><a href="contacto.html">Contacto</a></li>
 				<li>
@@ -192,8 +197,9 @@
 				</li>
 			</ul>
 		</footer>
-		<script src="../js/scriptquestions.js"></script>
+		
 	</body>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-	<script src="../js/vueMenu.js"></script>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+	<!--<script src="../js/vueMenu.js"></script>-->
+	<script src="../js/scriptquestions.js"></script>
 </html>

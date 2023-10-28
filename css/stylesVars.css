@@ -28,3 +28,11 @@ html {
 	width: 100vw;
 	min-height: 100vh;
 }
+
+.sombra-gris {
+	filter: drop-shadow(0.25rem 0.25rem rgba(0, 0, 0, 0.3));
+}
+
+.sombra-rosa {
+	filter: drop-shadow(0.15rem 0.15rem #f2b5d4);
+}
