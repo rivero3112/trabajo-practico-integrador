@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabla_usuarios.css">
+    <title>Tabla Usuarios</title>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <div class="iconNav">
+
+            <h3>Fit21 Team Zone</h3>
+
+        <img src="../img/logo.png" alt="logo" />
+            
+            <a href="../index.html">Home</a>
+            <a href="./index1.html">Inicio</a>
+            <a href="./tabla_usuarios.html">Tabla de Usuarios</a>
+            <a href="./ingresar_usuarios.html">Registrar Usuario</a>
+        </div>
+<hr>
+    
+
+    <main>
+
+        <section class="container">
+
+            <H1>TABLA INFORMACIÓN USUARIOS</H1>
+            <div id="app" >
+
+                
+
+                <!-- Botón Nuevo -->
+                <a class="nuevo" href="ingresar_usuarios.html">Nuevo Registro</a>
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+
+                    </section>
+                    <section v-else>
+                        
+                        <div >
+                            <table class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                        <th>Fecha de Nacimiento</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Género</th>
+                                        <th>Acción</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr v-for="usuario in usuarios">
+                                        <td >{{usuario.id}}</td>
+                                        <td>{{usuario.nombre}}</td>
+                                        <td>{{usuario.apellido}}</td>
+                                        <td>{{usuario.nacimiento}}</td>
+                                        <td>{{usuario.email}}</td>
+                                        <td>{{usuario.password}}</td>
+                                        <td>{{usuario.genero}}</td>
+                                        <td>
+                                            <button type="button"  v-on:click="eliminar(usuario.id)">Eliminar</button>
+                                        </td>
+                                        <td>
+                                            <a class="boton" :href="'editar_usuarios.html?id='+ usuario.id+'&nombre=' +usuario.nombre+ '&apellido=' +usuario.apellido+ '&nacimiento=' +usuario.nacimiento +  '&email=' +usuario.email +  '&password=' +usuario.password +  '&genero=' +usuario.genero">Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../js/tabla_usuarios.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.iconNav {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin-bottom: 1rem;    
+}
+    
+
+.iconNav a{
+    text-align: end;
+    color: black; 
+    padding-right: 4%; 
+    font-size: 1rem; 
+    text-decoration: underline;  
+}
+
+
+.iconNav img {
+	position: absolute; 
+    margin: 2rem;
+	top: 0;
+    width: 8rem;
+	height: 2rem; 
+} 
+
+.container{
+    background-color: white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+table {
+    background-color: #ffa134;
+    border-collapse: collapse;
+    width: 60vw;
+    max-width: 60vw;
+    margin: 2vw auto;
+    font-family: Arial, sans-serif;
+    height:auto;
+    
+  }
+
+th, td {
+    border: 0.1vw solid #dddddd;
+    padding: 0.8vw;
+    text-align: left;
+    color: black;
+    
+  }
+
+th {
+    background-color: chocolate;
+    font-weight: bold;
+    color: #001F3F;
+}
+
+a{
+    text-decoration: none;
+    color: #dddddd;
+}
+
+td:hover{
+    background-color: #f2f2f2;
+    color:#001F3F
+}
+
+a:hover{
+    background-color: #f2f2f2;
+    color:#001F3F
+}
+
+.menu{
+    text-decoration: none;
+    background-color: #001F3F;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2vw;
+
+}
+
+
+/* Botón de Eliminar */
+button{
+    margin-right: 2vh;
+    background-color: red; 
+    color: white; 
+    padding: 0.5vw 3vh; 
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 1vw; 
+    cursor: pointer; 
+    
+}
+
+
+/* Botón de Editar */
+.boton{
+    margin-right: 2vh;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 0.5vw 3vh; 
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1vw; 
+    cursor: pointer; 
+}
+
+/* Botón de Nuevo Registro */
+
+.nuevo{
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #001F3F50; 
+    color: black; 
+    padding: 0.5vw 3vh; 
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1vw; 
+    cursor: pointer; 
+}
+
+
+
+
+
+

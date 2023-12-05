@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.iconNav {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin-bottom: 1rem;    
+}
+    
+
+.iconNav a{
+    text-align: end;
+    color: black; 
+    padding-right: 4%;
+    font-size: 1rem; 
+    text-decoration: underline;   
+}
+
+
+.iconNav img {
+	position: absolute; 
+    margin: 2rem;
+	top: 0;
+    width: 2rem;
+	height: 2rem; 
+} 
+
+
+.container-form{
+    background-color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #ffa134;
+    width: 37vw;
+    height: 50vh;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    color: black;
+}
+
+.entrada{
+    margin-bottom: 2vh;
+}
+
+label{
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+button {
+    padding: 0.2vw 0.3vh;
+    font-size: 1.6vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #9988f8;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #7866ff;
+}
+
+/* Botón Cuadro de Ingresar Usuario */
+.modificar{
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: chocolate;
+    color:black; 
+    padding: 0.5vw 3vh; 
+    border: none; 
+    border-radius: 2vw; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1vw; 
+    cursor: pointer; 
+}
+
+
+
