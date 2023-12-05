@@ -58,7 +58,7 @@ h1 {
 	height: 100%;
 	width: 100%;
 	border: none;
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: 200;
 	border-radius: 6px;
 }
@@ -137,7 +137,7 @@ h1 {
 
 .form-link span,
 .form-link label {
-	font-size: 10px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #232836;
 }
