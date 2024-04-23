@@ -161,6 +161,8 @@
 
 				<!-- Registrarse acá -->
 
+				<!-- Registrarse acá -->
+
 				<div :class="`form signup ${registerForm ? 'show' : 'hidden'}`">
 					<div class="form-content">
 						<div class="encab">
@@ -173,6 +175,8 @@
 							<div class="field input-field">
 								<input
 									type="text"
+									name="nombre"
+									id="nombre"
 									placeholder="Nombre Completo"
 									class="input"
 									required
@@ -182,7 +186,33 @@
 
 							<div class="field input-field">
 								<input
+									type="text"
+									name="apellido"
+									id="apellido"
+									placeholder="Apellido Completo"
+									class="input"
+									required
+								/>
+								<i class="bx bx-user eye-icon1"></i>
+							</div>
+
+							<div class="field input-field">
+								<input
+									type="text"
+									name="nacimiento"
+									id="nacimiento"
+									placeholder="Fecha de Nacimiento"
+									class="input"
+									required
+								/>
+								<!-- <i class="bx bx-user eye-icon1"></i> -->
+							</div>
+
+							<div class="field input-field">
+								<input
 									type="email"
+									name="email"
+									id="email"
 									placeholder="Correo Electrónico"
 									class="password"
 									required
@@ -193,17 +223,33 @@
 							<div class="field input-field">
 								<input
 									type="password"
+									name="password"
+									id="password"
 									placeholder="Contraseña"
 									class="password"
 									required
 								/>
 								<i class="bx bx-lock-alt eye-icon1"></i>
-								<i class="bx bx-hide eye-icon"></i>
+								<!-- <i class="bx bx-hide eye-icon"></i> -->
+							</div>
+
+							<div class="field input-field">
+								<input
+									type="text"
+									name="genero"
+									id="genero"
+									placeholder="Género"
+									class="input"
+									required
+								/>
+								<!-- <i class="bx bx-user eye-icon1"></i> -->
 							</div>
 
 							<div class="field button-field">
 								<div class="div-row-buttom">
-									<input type="submit" value="Regístrate" />
+									<!-- <input type="submit" value="Regístrate" /> -->
+
+									<input type="submit" onclick="guardar()"></>
 								</div>
 							</div>
 						</form>
@@ -238,6 +284,7 @@
 
 			<!-- JavaScript -->
 			<script src="../js/scriptlogin.js"></script>
+			<script src="../js/ingresar_usuarios2.js"></script>
 		</main>
 	</body>
 	<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
