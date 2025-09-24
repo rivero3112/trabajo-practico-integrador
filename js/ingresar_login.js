@@ -43,7 +43,7 @@ function login() {
             }
 
             // Redirigir al home o dashboard
-            window.location.href = "../index.html";
+            window.location.href = "../bienvenida.html";
         })
         .catch(err => {
             alert("Error al iniciar sesión: " + err.message);
