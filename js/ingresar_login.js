@@ -16,7 +16,7 @@ function login() {
 
     console.log(datos);
 
-    let url = "https://gymfit21.pythonanywhere.com/usuario";  // Cambia la ruta si tu backend usa otra
+    let url = "https://gymfit21.pythonanywhere.com/login";  // Cambia la ruta si tu backend usa otra
     let options = {
         body: JSON.stringify(datos),
         method: 'POST',
