@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/tabla_usuarios.css">
-    <title>Tabla Usuarios</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de Usuarios</title>
+    <link rel="stylesheet" href="../css/tabla_usuarios.css" />
 </head>
+
 <body>
 
     <header id="header"></header>
 
     <div class="iconNav">
-
-            <h3>Fit21 Team Zone</h3>
-
+        <h3>Fit21 Team Zone</h3>
         <img src="../img/logo.png" alt="logo" />
-            
-            <a href="../index.html">Inicio</a>
-            <a href="./index1.html">CRUD</a>
-            <a href="./tabla_usuarios.html">Tabla de Usuarios</a>
-            <a href="./ingresar_usuarios.html">Registrar Usuario</a>
-        </div>
-<hr>
-    
+        <a href="../index.html">Inicio</a>
+        <a href="./index1.html">CRUD</a>
+        <a href="./tabla_usuarios.html">Tabla de Usuarios</a>
+        <a href="./ingresar_usuarios.html">Registrar Usuario</a>
+    </div>
+
+    <hr>
 
     <main>
-
         <section class="container">
+            <h1>TABLA INFORMACIÓN USUARIOS</h1>
 
-            <H1>TABLA INFORMACIÓN USUARIOS</H1>
-            <div id="app" >
+            <div id="app">
 
+                <!-- 🔧 CABECERA DE HERRAMIENTAS (nuevo + búsqueda en la misma fila) -->
+                <div class="toolbar">
+                    <a class="nuevo" href="ingresar_usuarios.html">➕ Nuevo Registro</a>
                 
+                    <div class="busqueda">
+                        <input type="text" v-model="busqueda" placeholder="🔍 Buscar por nombre, apellido o email..." />
+                        <p v-if="busqueda">
+                            Mostrando {{ usuariosFiltrados.length }} resultado(s)
+                        </p>
+                    </div>
+                </div>
 
-                <!-- Botón Nuevo -->
-                <a class="nuevo" href="ingresar_usuarios.html">Nuevo Registro</a>
-
-                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-if="error">Lo sentimos, se produjo un error</section>
                 <section v-else>
                     <section v-if="cargando">
-                        <div class="spinner-border"></div>
-                        <p>Cargando .....</p>
-
+                        <p>Cargando ...</p>
                     </section>
                     <section v-else>
-                        
-                        <div >
+
+                        <!-- 📋 TABLA -->
+                        <div class="tabla-wrapper">
                             <table class="tabla">
                                 <thead>
                                     <tr>
@@ -61,38 +65,47 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                   
-                                    <tr v-for="usuario in usuarios">
-                                        <td >{{usuario.id}}</td>
+                                    <tr v-for="usuario in usuariosPaginados" :key="usuario.id">
+                                        <td>{{usuario.id}}</td>
                                         <td>{{usuario.nombre}}</td>
                                         <td>{{usuario.apellido}}</td>
                                         <td>{{usuario.nacimiento}}</td>
                                         <td>{{usuario.email}}</td>
                                         <td>{{usuario.password}}</td>
                                         <td>{{usuario.genero}}</td>
+                                        <td><button @click="eliminar(usuario.id)">Eliminar</button></td>
                                         <td>
-                                            <button type="button"  v-on:click="eliminar(usuario.id)">Eliminar</button>
-                                        </td>
-                                        <td>
-                                            <a class="boton" :href="'editar_usuarios.html?id='+ usuario.id+'&nombre=' +usuario.nombre+ '&apellido=' +usuario.apellido+ '&nacimiento=' +usuario.nacimiento +  '&email=' +usuario.email +  '&password=' +usuario.password +  '&genero=' +usuario.genero">Editar</a>
+                                            <a class="boton" :href="'editar_usuarios.html?id='+usuario.id">
+                                                Editar
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <!-- 📄 PAGINACIÓN -->
+                        <div class="paginacion">
+                            <button @click="paginaAnterior" :disabled="paginaActual === 1">
+                                ⬅ Anterior
+                            </button>
+                            <span>Página {{paginaActual}} de {{totalPaginas}}</span>
+                            <button @click="paginaSiguiente" :disabled="paginaActual === totalPaginas">
+                                Siguiente ➡
+                            </button>
+                        </div>
+
                     </section>
                 </section>
-
             </div>
         </section>
-
     </main>
 
     <footer></footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
     <script src="../js/tabla_usuarios.js"></script>
-    
+
 </body>
+
 </html>
