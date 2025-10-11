@@ -1,150 +1,226 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .iconNav {
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	margin-bottom: 1rem;    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 1rem;
 }
-    
 
-.iconNav a{
+.iconNav a {
     text-align: end;
-    color: black; 
-    padding-right: 4%; 
-    font-size: 1rem; 
-    text-decoration: underline;  
+    color: black;
+    padding-right: 4%;
+    font-size: 1rem;
+    text-decoration: underline;
 }
-
 
 .iconNav img {
-	position: absolute; 
+    position: absolute;
     margin: 2rem;
-	top: 0;
+    top: 0;
     width: 8rem;
-	height: 2rem; 
-} 
+    height: 2rem;
+}
 
-.container{
+.container {
     background-color: white;
     height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
+/* ================================
+   TABLA PRINCIPAL
+   ================================ */
+.tabla-wrapper {
+    width: 95vw;
+    max-width: 1200px;
+    min-width: 800px;
+    height: 60vh;
+    overflow-x: auto;
+    /* ✅ scroll horizontal */
+    overflow-y: auto;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
 
-table {
-    background-color: #ffa134;
+.tabla {
+    width: 1200px;
+    /* ✅ ancho fijo y estable */
     border-collapse: collapse;
-    width: 60vw;
-    max-width: 60vw;
-    margin: 2vw auto;
+    table-layout: auto;
+    /* ✅ ajusta columnas según contenido */
+    background-color: #ffa134;
     font-family: Arial, sans-serif;
-    height:auto;
-    
-  }
+}
 
-th, td {
-    border: 0.1vw solid #dddddd;
+th,
+td {
+    border: 1px solid #ddd;
     padding: 0.8vw;
     text-align: left;
-    color: black;
-    
-  }
+    white-space: nowrap;
+    /* ✅ evita cortes */
+}
 
 th {
     background-color: chocolate;
+    color: #001F3F;
     font-weight: bold;
+}
+
+td:hover {
+    background-color: #f2f2f2;
     color: #001F3F;
 }
 
-a{
+a,
+.boton,
+.nuevo,
+button {
     text-decoration: none;
-    color: #dddddd;
+    cursor: pointer;
 }
 
-td:hover{
-    background-color: #f2f2f2;
-    color:#001F3F
+/* ================================
+   BOTONES
+   ================================ */
+button {
+    background-color: red;
+    color: white;
+    padding: 0.5vw 3vh;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1vw;
 }
 
-a:hover{
-    background-color: #f2f2f2;
-    color:#001F3F
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5vw 3vh;
+    border-radius: 2vw;
+    font-size: 1vw;
 }
 
-.menu{
-    text-decoration: none;
-    background-color: #001F3F;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2vw;
-
-}
-
-
-/* Botón de Eliminar */
-button{
-    margin-right: 2vh;
-    background-color: red; 
-    color: white; 
-    padding: 0.5vw 3vh; 
-    border: none; 
-    border-radius: 2vw; 
-    text-align: center; 
-    text-decoration: none; 
+.nuevo {
+    background-color: #001F3F50;
+    color: black;
+    padding: 0.5vw 3vh;
+    border-radius: 2vw;
+    font-size: 1vw;
     display: inline-block;
-    font-size: 1vw; 
-    cursor: pointer; 
-    
+    margin-top: 1rem;
 }
 
-
-/* Botón de Editar */
-.boton{
-    margin-right: 2vh;
-    background-color: #4CAF50; 
-    color: white; 
-    padding: 0.5vw 3vh; 
-    border: none; 
-    border-radius: 2vw; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 1vw; 
-    cursor: pointer; 
+/* ================================
+   PAGINACIÓN
+   ================================ */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
-/* Botón de Nuevo Registro */
-
-.nuevo{
-    color: #f2f2f2;
-    margin-right: 2vh;
-    background-color: #001F3F50; 
-    color: black; 
-    padding: 0.5vw 3vh; 
-    border: none; 
-    border-radius: 2vw; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 1vw; 
-    cursor: pointer; 
+.paginacion button {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    font-weight: bold;
 }
 
+.paginacion button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 
+/* ================================
+   BARRA DE BÚSQUEDA
+   ================================ */
+.busqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
 
+.busqueda input {
+    width: 60%;
+    max-width: 400px;
+    padding: 0.6rem 1rem;
+    border: 2px solid #001f3f;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
 
+.busqueda input:focus {
+    border-color: chocolate;
+    box-shadow: 0 0 5px chocolate;
+}
 
+.busqueda p {
+    font-size: 0.9rem;
+    color: #333;
+}
 
+/* ================================
+   CABECERA DE HERRAMIENTAS
+   ================================ */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 1rem auto 0 auto;
+    gap: 1rem;
+}
+
+.toolbar .nuevo {
+    background-color: #001f3f80;
+    color: black;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.toolbar .nuevo:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+.toolbar .busqueda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toolbar .busqueda input {
+    width: 100%;
+    max-width: 350px;
+}
+
+.toolbar .busqueda p {
+    align-self: flex-end;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #555;
+}
