@@ -1,83 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
     <link rel="stylesheet" href="../css/ingresar_usuarios.css">
     <link rel="stylesheet" href="../css/tabla_usuarios.css">
-    <title>Editar Usuario</title>
 </head>
+
 <body>
     <header id="header"></header>
-    <div class="iconNav">
 
+    <div class="iconNav">
         <h3>Fit21 Team Zone</h3>
         <img src="../img/logo.png" alt="logo" />
-           
-        <li>
-            <a href="../index.html">Inicio</a>
-            <a href="./index1.html">CRUD</a>
-            <a href="./tabla_usuarios.html">Tabla de Usuarios</a>
-            <a href="./ingresar_usuarios.html">Registrar Usuario</a>
-
+        <a href="../index.html">Inicio</a>
+        <a href="./index1.html">CRUD</a>
+        <a href="./tabla_usuarios.html">Tabla de Usuarios</a>
+        <a href="./ingresar_usuarios.html">Registrar Usuario</a>
     </div>
-<hr>
+
+    <hr>
 
     <main>
         <section>
-
             <div class="container-form">
                 <form>
-                   
+                <!-- <form id="form-editar"></form> -->
                     <div>
                         <label for="id">ID</label>
                         <input type="number" name="id" id="id" disabled>
                     </div>
-            
+
                     <div>
                         <label for="nombre">Nombres</label>
                         <input type="text" name="nombre" id="nombre">
                     </div>
 
-                    <div class="entrada">
-                        <label for="apellido">Apellidos:</label>
+                    <div>
+                        <label for="apellido">Apellidos</label>
                         <input type="text" name="apellido" id="apellido">
                     </div>
 
-                    <div class="entrada">
-                        <label for="nacimiento">Fecha de Nacimiento:</label>
-                        <input type="text" name="nacimiento" id="nacimiento">
+                    <div>
+                        <label for="nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" name="nacimiento" id="nacimiento">
                     </div>
 
-                    <div class="entrada">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
                     </div>
 
-                    <div class="entrada">
-                        <label for="password">Password:</label>
+                    <div>
+                        <label for="password">Password</label>
                         <input type="text" name="password" id="password">
                     </div>
 
-                    <div class="entrada">
-                        <label for="genero">Género:</label>
+                    <div>
+                        <label for="genero">Género</label>
                         <input type="text" name="genero" id="genero">
                     </div>
 
-                    
                     <button class="modificar" type="button" onclick="modificar()">Modificar</button>
-                </form>
-          
-          
-              </div>
-
+                </formv>
+            </div>
         </section>
     </main>
 
-    
     <footer></footer>
 
     <script src="../js/editar_usuarios.js"></script>
     <script src="../js/datos_editar.js"></script>
+
 </body>
+
 </html>
