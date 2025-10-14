@@ -1,43 +1,47 @@
-function modificar() {
-    let id = document.getElementById("id").value
-    let nombre_ingresado = document.getElementById("nombre").value
-    let apellido_ingresado = document.getElementById("apellido").value 
-    let nacimiento_ingresado = document.getElementById("nacimiento").value
-    let email_ingresado = document.getElementById("email").value     
-    let password_ingresado = document.getElementById("password").value
-    let genero_ingresado = document.getElementById("genero").value 
+document.getElementById("btnModificar").addEventListener("click", modificar);
 
-    let datos = {
-        nombre: nombre_ingresado,
-        apellido:apellido_ingresado,
-        nacimiento:nacimiento_ingresado,
-        email:email_ingresado,
-        password:password_ingresado,
-        genero:genero_ingresado
-        }
+async function modificar() {
+  const id = document.getElementById("id").value;
+  const nombre_ingresado = document.getElementById("nombre").value.trim();
+  const apellido_ingresado = document.getElementById("apellido").value.trim();
+  const nacimiento_ingresado = document.getElementById("nacimiento").value;
+  const email_ingresado = document.getElementById("email").value.trim();
+  const password_ingresado = document.getElementById("password").value.trim();
+  const genero_ingresado = document.getElementById("genero").value.trim().toUpperCase();
 
-    console.log(datos);
+  // ✅ Validar datos
+  if (!nombre_ingresado || !apellido_ingresado) return alert("Nombre y apellido son obligatorios.");
+  if (!email_ingresado.includes("@")) return alert("Correo electrónico inválido.");
+  if (!password_ingresado) return alert("Debe ingresar una contraseña.");
 
-    let url = "https://gymfit21.pythonanywhere.com/update/"+id
-    var options = {
-        body: JSON.stringify(datos),
-        method: 'PUT',
-        
-        headers: { 'Content-Type': 'application/json' },
-        redirect: 'follow'
+  const datos = {
+    nombre: nombre_ingresado,
+    apellido: apellido_ingresado,
+    nacimiento: nacimiento_ingresado || null,
+    email: email_ingresado,
+    password: password_ingresado,
+    genero: genero_ingresado
+  };
+
+  try {
+    const res = await fetch(`https://gymfit21.pythonanywhere.com/update/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(datos)
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) {
+      alert(`❌ Error: ${result.error || "No se pudo actualizar el usuario."}`);
+      return;
     }
-    fetch(url, options)
-        .then(function () {
-            console.log("modificado")
-            alert("Registro modificado")
 
-            //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
-           window.location.href = "./tabla_usuarios.html";
-          
-        })
-        .catch(err => {
-            this.error = true
-            console.error(err);
-            alert("Error al Modificar")
-        })      
+    alert("✅ Usuario actualizado correctamente.");
+    window.location.href = "./tabla_usuarios.html";
+
+  } catch (err) {
+    console.error("❌ Error al modificar usuario:", err);
+    alert("Error de conexión con el servidor.");
+  }
 }
