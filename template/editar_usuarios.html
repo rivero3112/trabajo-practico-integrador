@@ -26,20 +26,20 @@
     <main>
         <section>
             <div class="container-form">
-                <form>
+                <form id="form-editar">
                     <div>
                         <label for="id">ID</label>
-                        <input type="number" name="id" id="id" disabled>
+                        <input type="number" name="id" id="id" readonly>
                     </div>
 
                     <div>
                         <label for="nombre">Nombres</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" required>
                     </div>
 
                     <div>
                         <label for="apellido">Apellidos</label>
-                        <input type="text" name="apellido" id="apellido">
+                        <input type="text" name="apellido" id="apellido" required>
                     </div>
 
                     <div>
@@ -49,12 +49,12 @@
 
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div>
                         <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
+                        <input type="text" name="password" id="password" required>
                     </div>
 
                     <div>
@@ -62,17 +62,16 @@
                         <input type="text" name="genero" id="genero">
                     </div>
 
-                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
-                </formv>
+                    <button class="modificar" type="button" id="btnModificar">Modificar</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer></footer>
 
-    <script src="../js/editar_usuarios.js"></script>
     <script src="../js/datos_editar.js"></script>
-
+    <script src="../js/editar_usuarios.js"></script>
 </body>
 
 </html>
